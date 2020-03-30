@@ -1,12 +1,8 @@
-@import "colors", "fonts", "typography", "breakpoints"
+@import "colors", "fonts", "typography", "breakpoints", "dimens"
 
-$dimen-PYPn: 56px
-
-.wIQY
-    height: $dimen-PYPn
-    display: flex
-    align-items: center
-    justify-content: space-between
+.uWWa
+    margin: 0
+    background-color: $color-background
 
 .UwAp
     padding: 20px 20px
@@ -16,7 +12,13 @@ $dimen-PYPn: 56px
 
 .AGzk
     margin: 0 auto
-    max-width: 1200px
+    max-width: $dimen-Fscw
+
+.wIQY
+    display: flex
+    align-items: center
+    height: $dimen-PYPn
+    justify-content: space-between
 
 .WiAd
     height: 100%
@@ -35,197 +37,74 @@ $dimen-PYPn: 56px
     border-radius: 50%
     justify-content: center
     background-color: $color-surface
-    transition: background-color 0.3s ease
 
     &:hover
         background-color: $color-on-surface-4
-        transition: background-color 0.3s ease
 
 .FMWd
-    height: 22px
-
-    @include tablet
-        height: 24px
+    width: 24px
+    height: 24px
 
 .TMEK
-    height: 30px
+    height: 28px
 
     @include tablet
         height: 32px
 
 .DsUf
-    padding-top: 32px
-    padding-bottom: 32px
+    padding-top: 36px
+    padding-bottom: 36px
 
 .uGRT
     @extend %headline-2
     color: $color-on-background-1
 
 .fAET
-    max-width: 480px
+    max-width: 460px
 
     @include tablet
         max-width: 740px
 
 .UShB
-    margin: 0
     font-size: 20px
     font-weight: 500
-    margin-top: 24px
     max-width: 520px
     line-height: 148%
-    letter-spacing: -0.01em
+    margin: 24px 0 0 0
+    letter-spacing: -0.02em
     font-family: "archia", sans-serif
 
     @include tablet
-        font-size: 22px
-        max-width: 574px
+        max-width: 524px
 
 .Rllq
-    display: grid
-    grid-gap: 12px
     margin-top: 32px
-    grid-template-columns: repeat(2, 1fr)
-
-    @include tablet
-        display: inline-grid
-        grid-template-columns: repeat(2, auto)
 
 .akVy
-    height: 40px
-    @extend %button
-    padding: 0 12px
-    border-radius: 8px
+    height: 52px
+    @extend %button-1
+    cursor: pointer
+    padding: 0 18px
     position: relative
     align-items: center
     display: inline-flex
     box-sizing: border-box
     justify-content: center
-    color: $color-on-background-1
-    border: 1px solid $color-on-background-3
-
-    &.BVpW:not(.aYuR)
-        transition: border-color 0.3s ease
-
-        &:hover
-            border-color: transparent
-            color: $color-on-surface-1
-            transition: border-color 0.3s ease
-
-        &::before
-            top: 0
-            left: 0
-            right: 0
-            bottom: 0
-            opacity: 0%
-            content: ""
-            z-index: -1
-            position: absolute
-            transform: scale(0.82)
-            border-radius: inherit
-            background-color: $color-on-surface-4
-            transition: opacity 0.3s ease, transform 0.3s ease
-
-        &:hover::before
-            opacity: 100%
-            transform: scale(1)
-            transition: opacity 0.3s ease, transform 0.3s ease
-
-    &:not(.aYuR):not(.BVpW)
-        background-color: $color-background
-        transition: background-color 0.3s ease, border-color 0.3s ease
-
-        &:hover
-            border-color: transparent
-            background-color: $color-on-surface-4
-            transition: background-color 0.3s ease, border-color 0.3s ease
-
-    @include tablet
-        padding: 0 16px
-
-.BVpW
-    height: 48px
-
-.aYuR
-    border: none
-    color: #FFFFFF
+    color: $color-on-primary
     background-color: $color-primary
-    transition: background-color 0.3s ease
 
     &:hover
         background-color: $color-primary-variant
-        transition: background-color 0.3s ease
 
-.gRsQ
-    @extend %headline-4
-    color: $color-on-background-1
+    &::after
+        content: "→"
+        margin-left: 12px
 
 .doUw
     display: flex
     align-items: baseline
     justify-content: space-between
 
-.dpOB
-    margin-top: 8px
-
-.TmCC
-    display: grid
-    grid-row-gap: 8px
-    grid-column-gap: 32px
-    grid-template-columns: none
-    
-    @include tablet
-        grid-template-columns: 3fr 2fr
-
-.Cxbi
-    @extend %overline
-    color: $color-primary
-
-.eyEc
-    @extend %headline-5
-    color: $color-on-background-1
-
-.GEHw
-    margin-top: 8px
-    white-space: nowrap
-
-.YDdY
-    height: 294px
-    background-size: cover
-    background-position: center
-    border-radius: 16px 16px 0 0
-    background-image: url("../img/dGQP.png")
-
-.QmXm
-    display: flex
-    padding: 24px
-    flex-wrap: wrap
-    align-items: center
-    justify-content: space-between
-
-.jMbG
-    border-radius: 16px
-    position: relative
-    box-sizing: border-box
-    background-color: $color-surface
-    
-    &::before
-        top: 0
-        left: 0
-        right: 0
-        bottom: 0
-        content: ""
-        z-index: -1
-        position: absolute
-        border-radius: inherit
-        box-shadow: 0px 2px 8px rgba(154, 156, 184, 0.08), 0px 16px 36px rgba(151, 153, 184, 0.18)
-
-.ughd
-    display: flex
-    padding: 22px 0
-    align-items: center
-    text-decoration: none
-    justify-content: space-between
 
 .oIbQ
     @extend %headline-6
@@ -235,59 +114,147 @@ $dimen-PYPn: 56px
     @extend %body-1
     color: $color-on-background-1
 
-.fZKB
-    margin-top: 4px
-    color: $color-on-background-2
-
-.QyBd
-    margin-top: 8px
-    color: $color-on-background-2
-
-.dwxj
-    display: none
-
-.lmVH
-    margin: 0
-    height: 1px
-    border: none
-    background-color: $color-on-background-3
-
-.ZKGu
-    display: grid
-    grid-gap: 12px
-
-    @include tablet
-        grid-template-columns: repeat(3, 1fr)
-
-.zRqS
-    padding: 32px
-
-.pKBp
-    display: flex
-    align-items: center
-
-.Dexq
-    margin-left: 16px
-
-.NvfP
-    margin-top: 20px
-    color: $color-on-background-1
-
-.uWWa
-    margin: 0
-
 .IiPh
-    @extend %link
+    @extend %button-2
+    cursor: pointer
     color: $color-primary
-    transition: color 0.3s ease
+    display: inline-block
 
     &:hover
         color: $color-primary-variant
-        transition: color 0.3s ease
 
-.oPRx
-    align-items: start
+.CoGR
+    @extend %headline-3
+    color: $color-on-background-1
+
+.YUdb
+    display: grid
+    grid-gap: 16px
+    margin-top: 10px
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: repeat(auto, 1fr)
+    
+
+    @include tablet
+        grid-template-columns: repeat(8, 1fr)
+        grid-template-rows: repeat(auto, 1fr)
+
+    @include desktop
+        grid-template-rows: repeat(auto, 1fr)
+        grid-template-columns: repeat(12, 1fr)
+        
+.QuFm
+    display: flex
     flex-direction: column
+    
+.OvGI
+    grid-row: 1/2
+    grid-column: 1/5
 
-.WXTq
-    margin-top: 16px
+    @include tablet
+        grid-column: 1/5
+
+    @include desktop
+        grid-row: 1/3
+        grid-column: 1/7
+ 
+.BcoT
+    height: 0
+    flex-grow: 1
+    padding-bottom: calc(9/16 * 100%)
+    background-image: url("../img/iqUp.png")
+
+    @include desktop
+        height: auto
+        padding-bottom: 0
+        background-image: url("../img/unIz.png")
+
+.GBcP
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+
+.eqtv
+    background-image: url("../img/hOzo.png")
+
+.PFmg
+    background-image: url("../img/FSrB.png")
+
+.HwOq
+    background-image: url("../img/ICwl.png")
+
+.KRsH
+    height: 0
+    padding-bottom: calc(9/16 * 100%);
+
+.tGoo
+    @extend %body-2
+
+.lMPA
+    margin-top: 2px
+    color: $color-on-background-2
+
+.ZQRm
+    margin-top: 10px
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+
+.hMzu
+    grid-row: 2/3
+    grid-column: 1/5
+
+    @include tablet
+        grid-row: 1/2
+        grid-column: 5/-1
+
+    @include desktop
+        grid-column: 7/10
+
+.beIP
+    grid-column: 1/5
+    grid-row: 3/4
+
+    @include tablet
+        grid-row: 2/3
+        grid-column: 1/5
+
+    @include desktop
+        grid-row: 1/2
+        grid-column: 10/-1
+
+.AUdJ
+    grid-row: 4/5
+    grid-column: 1/5
+
+    @include tablet
+        grid-row: 2/3
+        grid-column: 5/-1
+
+    @include desktop
+        grid-row: 2/3
+        grid-column: 7/10
+
+.Apkb
+    grid-row: 5/6
+    grid-column: 1/5
+
+    @include tablet
+        grid-row: 3/4
+        grid-column: 1/5
+
+    @include desktop
+        grid-row: 2/3
+        grid-column: 10/-1
+
+.bIsr
+    display: none
+
+    @include tablet
+        display: flex
+
+.SzOA
+    display: none
+
+    @include desktop
+        display: flex
