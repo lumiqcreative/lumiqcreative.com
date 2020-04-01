@@ -2,22 +2,48 @@
 
 .uWWa
     margin: 0
+    -webkit-font-smoothing: antialiased
     background-color: $color-background
 
 .UwAp
-    padding: 20px 20px
+    padding: 20px 20px 0 20px
 
     @include tablet
-        padding: 24px 24px
+        padding: 24px 24px 0 24px
 
 .AGzk
     margin: 0 auto
     max-width: $dimen-Fscw
 
 .wIQY
+    top: 0
+    z-index: 1
+    width: 100%
+    padding: 20px
+    position: fixed
+    box-sizing: border-box
+    transition: padding 0.3s ease
+    background-color: $color-surface-translucent
+
+    @include tablet
+        padding: 24px
+
+html:not([data-scroll="0"])
+    .wIQY
+        padding-top: 8px
+        padding-bottom: 8px
+        transition: padding 0.3s ease
+
+.NpOd
+    padding-top: 96px
+
+    @include tablet
+        padding-top: 104px
+    
+.Wagz
+    height: 56px
     display: flex
     align-items: center
-    height: $dimen-PYPn
     justify-content: space-between
 
 .WiAd
@@ -36,7 +62,7 @@
     width: $dimen-PYPn
     border-radius: 50%
     justify-content: center
-    background-color: $color-surface
+    background-color: transparent
 
     &:hover
         background-color: $color-on-surface-4
@@ -52,59 +78,103 @@
         height: 32px
 
 .DsUf
-    padding-top: 36px
-    padding-bottom: 36px
+    padding-top: 76px
+
+    @include tablet
+        padding-top: 88px
+
+.Rgeu
+    padding-top: 44px
+
+    @include tablet
+        padding-top: 56px
+
+.VbTk
+    padding-top: 76px
+    padding-bottom: 24px
+
+    @include tablet
+        padding-top: 88px
+        padding-bottom: 28px
 
 .uGRT
-    @extend %headline-2
+    @extend %headline-1
     color: $color-on-background-1
 
 .fAET
-    max-width: 460px
+    max-width: 420px
 
     @include tablet
+        max-width: 640px
+
+    @include desktop
         max-width: 740px
 
 .UShB
-    font-size: 20px
+    font-size: 18px
     font-weight: 500
-    max-width: 520px
+    max-width: 460px
     line-height: 148%
-    margin: 24px 0 0 0
-    letter-spacing: -0.02em
+    margin: 28px 0 0 0
+    letter-spacing: -0.03em
     font-family: "archia", sans-serif
 
     @include tablet
-        max-width: 524px
+        font-size: 20px
+        max-width: 500px
+
+    @include desktop
+        font-size: 22px
+        max-width: 560px
 
 .Rllq
-    margin-top: 32px
+    margin-top: 36px
 
 .akVy
     height: 52px
-    @extend %button-1
     cursor: pointer
-    padding: 0 18px
+    padding: 0 22px
+    overflow: hidden
+    @extend %button-1
     position: relative
+    border-radius: 4px
     align-items: center
     display: inline-flex
+    color: $color-primary
     box-sizing: border-box
     justify-content: center
-    color: $color-on-primary
-    background-color: $color-primary
+    transition: color 0.2s ease
+    box-shadow: inset 0 0 0 1px $color-primary
 
     &:hover
-        background-color: $color-primary-variant
+        color: $color-on-primary
+        transition: color 0.2s ease
+
+        &::before
+            transform: scaleY(1)
+            transition: transform 0.2s ease
+
+    &::before
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        z-index: -1
+        content: ""
+        position: absolute
+        transform: scaleY(0)
+        background: $color-primary
+        transform-origin: 50% 100%
+        transition: transform 0.2s ease
 
     &::after
         content: "→"
-        margin-left: 12px
+        margin-left: 16px
 
 .doUw
     display: flex
     align-items: baseline
     justify-content: space-between
-
 
 .oIbQ
     @extend %headline-6
@@ -130,7 +200,7 @@
 .YUdb
     display: grid
     grid-gap: 16px
-    margin-top: 10px
+    margin-top: 12px
     grid-template-columns: repeat(4, 1fr)
     grid-template-rows: repeat(auto, 1fr)
     
@@ -188,12 +258,15 @@
     padding-bottom: calc(9/16 * 100%);
 
 .tGoo
-    @extend %body-2
+    @extend %body-1
 
 .lMPA
     margin-top: 2px
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
     color: $color-on-background-2
-
+    
 .ZQRm
     margin-top: 10px
     overflow: hidden

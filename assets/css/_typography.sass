@@ -1,14 +1,19 @@
 @import "breakpoints"
     
-%headline-2
+%headline-1
     margin: 0
     font-size: 38px
     font-weight: 700
-    letter-spacing: -0.04em
+    letter-spacing: -0.05em
     font-family: "archia", sans-serif
 
     @include tablet
-        font-size: 60px
+        font-size: 56px
+        line-height: 64px
+
+    @include desktop
+        font-size: 72px
+        line-height: 80px
 
 %headline-3
     margin: 0
@@ -18,13 +23,13 @@
     font-family: "archia", sans-serif
 
     @include tablet
-        font-size: 34px
+        font-size: 38px
 
 %headline-6
     margin: 0
-    font-size: 18px
-    font-weight: 600
-    letter-spacing: -0.01em
+    font-size: 20px
+    font-weight: 700
+    letter-spacing: -0.02em
     font-family: "archia", sans-serif
 
 %body-1
@@ -39,7 +44,6 @@
     font-size: 14px
     font-weight: 500
     line-height: 152%
-    letter-spacing: 0.01em
     font-family: "archia", sans-serif
 
 %button-1
@@ -50,11 +54,23 @@
     letter-spacing: -0.01em
     font-family: "archia", sans-serif
 
+    @include tablet
+        font-size: 17px
+
+    @include desktop
+        font-size: 18px
+
 %button-2
     margin: 0
     font-size: 16px
     font-weight: 700
     line-height: 140%
-    letter-spacing: -0.01em
     text-decoration: none
+    letter-spacing: -0.01em
     font-family: "archia", sans-serif
+
+    @include tablet
+        font-size: 17px
+
+    @include desktop
+        font-size: 18px
