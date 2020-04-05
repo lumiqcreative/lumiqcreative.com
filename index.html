@@ -3,71 +3,91 @@
     <head>
         <meta charset="UTF-8">
         <title>Lumiq Creative</title>
-        <meta name="description" content="It’s just got harder to build a bad product.">
-        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="shortcut icon" href="assets/img/favicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
-        <script src="assets/js/index.js"></script>
+        <meta name="description" content="It’s just got harder to build a bad product.">
     </head>
-    <body class="uWWa">
-        <header class="wIQY">
-            <div class="AGzk Wagz">
-                <a href="./" class="WiAd"> <img src="assets/img/logo.svg" class="TMEK"> </a>
-                <nav class="NJiw">
-                    <a href="https://twitter.com/lumiqcreative" class="WiAd owBs"> <img class="FMWd" src="assets/img/twitter.svg"> </a>
-                    <a href="https://github.com/lumiqcreative" class="WiAd owBs"> <img class="FMWd" src="assets/img/github.svg"> </a>
-                </nav>
+    <body class="page">
+        <header class="header">
+            <div class="header__inner container">
+                <div class="header__inner-holder header__inner-holder--type--logo">
+                    <a class="header__item"><img src="assets/img/logo.svg" class="header__logo-img"></a>
+                </div>
+                <div class="header__inner-holder header__inner-holder--type--menu">
+                    <a href="#" class="header__item button button--style--3">Work</a>
+                    <a href="#" class="header__item button button--style--3">About</a>
+                    <a href="#" class="header__item button button--style--3">Contact</a>
+                </div>
+                <div class="header__inner-holder header__inner-holder--type--burger">
+                    <a class="header__item header__burger"><img src="assets/img/menu.svg" class="header__burger-img"></a>
+                </div>
+            </div>
+            <div class="header__drawer container">
+                <a href="#" class="header__drawer-link headline headline--style--2">Work</a>
+                <a href="#" class="header__drawer-link headline headline--style--2">About</a>
+                <a href="#" class="header__drawer-link headline headline--style--2">Contact</a>
             </div>
         </header>
-        <main class="NpOd">
-            <section class="UwAp Rgeu">
-                <div class="AGzk">
-                    <h2 class="uGRT fAET">It’s just got harder to build a bad product.</h1>
-                    <p class="UShB">With respect to my business line, I must confess I&nbsp;haven’t the tiniest inkling of what to call it. So if you please, glance below and work this out yourself.</p>
-                    <a href="mailto:contact@lumiqcreative.com" class="akVy Rllq">Get in Touch</a>
+        <main class="main">
+            <section class="hero page__hero">
+                <div class="hero__inner container">
+                    <h1 class="hero__heading headline headline--style--2">It’s just got harder to&nbsp;build a bad product.</h1>
+                    <h2 class="hero__copy copy copy--style--2">With respect to my business line, I&nbsp;must 
+                    confess I&nbsp;haven’t the tiniest inkling of what to call it. So if you please, glance below and work this out yourself.</h2>
+                    <a href="mailto:contact@lumiqcreative.com" class="hero__button button button--style--1 button--arrow">Get in Touch</a>
                 </div>
             </section>
-            <section class="UwAp DsUf">
-                <div class="AGzk doUw">
-                    <h3 class="CoGR">Highlights</h3>
-                    <a href="https://twitter.com/lumiqcreative" class="IiPh">Show Portfolio</a>
+            <section class="module page__module">
+                <div class="module__head container">
+                    <h3 class="module__heading headline headline--style--3">Highlights</h3>
+                    <a href="https://twitter.com/lumiqcreative" class="module__head-cta button button--style--2">Show Portfolio</a>
                 </div>
-                <div class="AGzk YUdb">
-                    <article class="QuFm OvGI">
-                        <div class="BcoT GBcP"></div>
-                        <h6 class="oIbQ ZQRm">‘LiftApp’</h6>
-                        <p class="tGoo lMPA">Backup Summary – 28 Mar 2020</p>
+                <div class="module__body tiled-showcase container grid">
+                    <article class="tiled-showcase__item tiled-showcase__item--size--lg">
+                        <picture class="tiled-showcase__item-cover">
+                            <source media="(min-width: 1024px)" srcset="assets/img/tiled-showcase__liftapp-backup-summary-lg.png">
+                            <img src="assets/img/tiled-showcase__liftapp-backup-summary-sm.png" class="tiled-showcase__item-img">
+                        </picture>
+                        <h4 class="headline headline--style--6 tiled-showcase__item-heading">LiftApp</h4>
+                        <h5 class="copy copy--style--3 tiled-showcase__item-copy">Backup Summary — 28 Mar 2020</h5>
                     </article>
-                    <article class="QuFm hMzu">
-                        <div class="PFmg GBcP KRsH"></div>
-                        <h6 class="oIbQ ZQRm">2020 Rebrand</h6>
-                        <p class="tGoo lMPA">Personal – 27 Mar 2020</p>
+                    <article class="tiled-showcase__item">
+                        <picture class="tiled-showcase__item-cover">
+                            <img src="assets/img/tiled-showcase__2020-rebrand.png" class="tiled-showcase__item-img">
+                        </picture>
+                        <h4 class="headline headline--style--6 tiled-showcase__item-heading">2020 Rebrand</h4>
+                        <h5 class="copy copy--style--3 tiled-showcase__item-copy">Personal — 4 Apr 2020</h5>
                     </article>
-                    <article class="QuFm beIP">
-                        <div class="eqtv GBcP KRsH"></div>
-                        <h6 class="oIbQ ZQRm">‘Swift Walls’</h6>
-                        <p class="tGoo lMPA">App Icon – 1 Mar 2020</p>
+                    <article class="tiled-showcase__item">
+                        <picture class="tiled-showcase__item-cover">
+                            <img src="assets/img/tiled-showcase__swift-walls-app-icon.png" class="tiled-showcase__item-img">
+                        </picture>
+                        <h4 class="headline headline--style--6 tiled-showcase__item-heading">‘Swift Walls’</h4>
+                        <h5 class="copy copy--style--3 tiled-showcase__item-copy">App Icon — 1 Mar 2020</h5>
                     </article>
-                    <article class="QuFm AUdJ bIsr">
-                        <div class="HwOq GBcP KRsH"></div>
-                        <h6 class="oIbQ ZQRm">‘Lawnchair’</h6>
-                        <p class="tGoo lMPA">Shortcut Editor – Coming Soon</p>
+                    <article class="tiled-showcase__item">
+                        <picture class="tiled-showcase__item-cover">
+                            <img src="assets/img/tiled-showcase__placeholder.png" class="tiled-showcase__item-img">
+                        </picture>
+                        <h4 class="headline headline--style--6 tiled-showcase__item-heading">‘Lawnchair’</h4>
+                        <h5 class="copy copy--style--3 tiled-showcase__item-copy">Colour Picker — Coming Soon</h5>
                     </article>
-                    <article class="QuFm Apkb SzOA">
-                        <div class="HwOq GBcP KRsH"></div>
-                        <h6 class="oIbQ ZQRm">‘Lawnchair’</h6>
-                        <p class="tGoo lMPA">Colour Picker – Coming Soon</p>
+                    <article class="tiled-showcase__item">
+                        <picture class="tiled-showcase__item-cover">
+                            <img src="assets/img/tiled-showcase__placeholder.png" class="tiled-showcase__item-img">
+                        </picture>
+                        <h4 class="headline headline--style--6 tiled-showcase__item-heading">‘Lawnchair’</h4>
+                        <h5 class="copy copy--style--3 tiled-showcase__item-copy">Shortcut Editor — Coming Soon</h5>
                     </article>
-                </div>
-                    
-            </section>
-            <section class="UwAp VbTk">
-                <div class="AGzk">
-                    <footer>
-                        <p class="qTDt">© <script type="text/javascript">document.write(new Date().getFullYear());</script> Lumiq Creative</p>
-                    </footer>
                 </div>
             </section>
         </main>
+        <footer class="footer page__footer">
+            <div class="footer__wrapper container">
+                <p class="copy">© <script type="text/javascript">document.write(new Date().getFullYear());</script> Lumiq Creative</p>
+            </div>
+        </footer>
+        <script src="assets/common-blocks/header/header.js"></script>
     </body>
 </html>

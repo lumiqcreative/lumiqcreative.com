@@ -1,0 +1,31 @@
+.hero
+    padding: 0 16px
+
+    @include tablet
+        padding: 0 24px
+
+    &__heading
+        max-width: 360px
+
+        @include tablet
+            max-width: 632px
+
+        @include desktop
+            max-width: 548px
+
+    &__copy
+        margin-top: 28px
+        max-width: 472px
+
+        @include tablet
+            max-width: 520px
+
+        @include desktop
+            max-width: 576px
+
+    &__button
+        width: 100%
+        margin-top: 32px
+
+        @include tablet
+            width: auto
