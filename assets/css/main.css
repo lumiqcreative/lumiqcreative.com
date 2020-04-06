@@ -671,8 +671,14 @@
 }
 
 .page__footer {
-  padding-top: 76px;
+  padding-top: 48px;
   padding-bottom: 16px;
+}
+
+@media (min-width: 769px) {
+  .page__footer {
+    padding-top: 64px;
+  }
 }
 
 .tiled-showcase {
