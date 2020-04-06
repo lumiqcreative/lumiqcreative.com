@@ -30,10 +30,21 @@
         grid-row: 1 / span 2
         grid-column: 1 / span 6
 
+        .tiled-showcase__item-cover
+            padding: 0
+            height: auto
+            flex-grow: 1
+            display: flex
+        
+        .tiled-showcase__item-img
+            height: 100%
+            object-fit: cover
+
 .tiled-showcase__item-cover
-    flex-grow: 1
-    display: flex
+    height: 0
+    display: block
     overflow: hidden
+    padding-bottom: 9 / 16 * 100%
     background-color: $on-background-4
 
 .tiled-showcase__item-heading
@@ -50,4 +61,3 @@
 
 .tiled-showcase__item-img
     width: 100%
-    object-fit: cover
