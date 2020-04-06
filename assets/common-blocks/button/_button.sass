@@ -54,13 +54,16 @@
 .button--style--3
     font-weight: 600
     color: $on-background-1
-    letter-spacing: -0.03em
+    letter-spacing: -0.02em
 
 .button--style--4
     font-weight: 500
     line-height: 18px
     color: $on-background-2
     letter-spacing: -0.02em
+
+    @include tablet
+        line-height: 24px
 
 .button--arrow::after
     content: "→"
