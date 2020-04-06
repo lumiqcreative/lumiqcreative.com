@@ -1,9 +1,9 @@
 @charset "UTF-8";
 .button {
+  font-size: 16px;
   cursor: pointer;
   overflow: hidden;
   position: relative;
-  font-weight: 600;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -13,16 +13,10 @@
   text-decoration: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "archia", sans-seif;
+  font-family: "archia", sans-serif;
 }
 
 @media (min-width: 769px) {
-  .button {
-    font-size: 17px;
-  }
-}
-
-@media (min-width: 1024px) {
   .button {
     font-size: 18px;
   }
@@ -34,11 +28,11 @@
   color: #7E29FF;
   font-weight: 700;
   border-radius: 4px;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
   -webkit-box-shadow: inset 0 0 0 1px #7E29FF;
           box-shadow: inset 0 0 0 1px #7E29FF;
 }
@@ -90,11 +84,10 @@
 }
 
 .button--style--4 {
-  font-size: 18px;
   font-weight: 500;
+  line-height: 18px;
   color: #8F8DA5;
-  line-height: 24px;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
 }
 
 .button--arrow::after {
@@ -136,17 +129,23 @@
 }
 
 .copy--style--2 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.03em;
+}
+
+@media (min-width: 769px) {
+  .copy--style--2 {
+    font-size: 18px;
+  }
 }
 
 .copy--style--3 {
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
 }
 
 .footer {
