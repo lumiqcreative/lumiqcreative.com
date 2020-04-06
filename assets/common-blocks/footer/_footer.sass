@@ -1,5 +1,44 @@
+$height: 48px
+    
 .footer
     padding: 0 16px
 
+    &__inner
+        display: flex
+        min-height: $height
+        align-items: center
+        flex-direction: column
+
+        @include tablet
+            flex-direction: row
+
+    &__copyright-notice
+        align-self: flex-start
+        margin-left: -16px
+
+    &__menu-holder
+        display: flex
+        align-self: flex-start
+        margin-right: -16px
+        margin-left: -16px
+        flex-direction: column
+
+        @include tablet
+            align-self: flex-end
+            margin-left: auto
+            flex-direction: row
+            
+
     @include tablet
         padding: 0 24px
+
+    &__item
+        height: 100%
+        display: flex
+        padding: 12px 16px
+        align-items: center
+        box-sizing: border-box
+        color: $on-background-2
+
+        @include tablet
+            padding: 16px

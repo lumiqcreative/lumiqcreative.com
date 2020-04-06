@@ -2,7 +2,6 @@
 @import "../../common-props/colors"
 
 .button
-    font-size: 16px
     cursor: pointer
     overflow: hidden
     position: relative
@@ -11,8 +10,6 @@
     display: inline-flex
     text-decoration: none
     box-sizing: border-box
-    justify-content: center
-    letter-spacing: -0.02em
     font-family: "archia", sans-seif
 
     @include tablet
@@ -28,6 +25,7 @@
     font-weight: 700
     border-radius: 4px
     transition: color 0.3s ease
+    justify-content: center
     box-shadow: inset 0 0 0 1px $primary
 
     &:hover
@@ -54,10 +52,19 @@
 .button--style--2
     color: $primary
     font-weight: 700
+    letter-spacing: -0.02em
 
 .button--style--3
     font-weight: 600
     color: $on-background-1
+    letter-spacing: -0.03em
+
+.button--style--4
+    font-size: 18px
+    font-weight: 500
+    color: $on-background-2
+    line-height: 24px
+    letter-spacing: -0.03em
 
 .button--arrow::after
     content: "→"
