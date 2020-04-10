@@ -9,6 +9,7 @@ $inner-default-height: 72px
     background-color: $surface-2
 
     &__inner-default
+        display: flex
         align-items: center
         height: $inner-default-height
 
@@ -32,9 +33,10 @@ $inner-default-height: 72px
             display: none
 
     &__item
-        display: flex
-        align-items: center
         padding: 16px
+        display: flex
+        cursor: pointer
+        align-items: center
         color: $on-background-2
 
     &__item_active
@@ -42,6 +44,7 @@ $inner-default-height: 72px
 
     &__logo-img
         height: 26px
+        margin: auto 0
 
         @include tablet
             height: 30px
@@ -50,12 +53,13 @@ $inner-default-height: 72px
         display: none
         flex-direction: column
         justify-content: center
+        height: calc(100vh - 72px)
         background-color: $surface-1
         transition: transform 0.3s ease
-        height: calc(100vh - 72px)
 
         &_open
             display: flex
 
-    &__inner-menu-drawer-item
+    &__menu-drawer-item
         padding: 8px 0
+        cursor: pointer

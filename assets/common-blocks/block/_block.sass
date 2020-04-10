@@ -1,8 +1,15 @@
+$side-padding-sm: 16px
+$side-padding-md: 20px
+$side-padding-lg: 24px
+    
 .block
-    padding: 0 16px
+    padding-left: $side-padding-sm
+    padding-right: $side-padding-sm
 
     @include tablet
-        padding: 0 20px
+        padding-left: $side-padding-md
+        padding-right: $side-padding-md
 
     @include desktop
-        padding: 0 24px
+        padding-left: $side-padding-lg
+        padding-right: $side-padding-lg
