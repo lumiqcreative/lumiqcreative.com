@@ -619,6 +619,12 @@
   display: flex;
 }
 
+@media (min-width: 769px) {
+  .top-bar__inner-menu-drawer_open {
+    display: none;
+  }
+}
+
 .top-bar__menu-drawer-item {
   padding: 8px 0;
   cursor: pointer;
@@ -788,6 +794,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (min-width: 769px) {
+  .top-bar__inner-menu-drawer_open {
+    display: none;
+  }
 }
 
 .top-bar__menu-drawer-item {
