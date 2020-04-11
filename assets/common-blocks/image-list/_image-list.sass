@@ -1,5 +1,4 @@
 .image-list
-    grid-row-gap: 24px
 
     &__item
         display: flex
@@ -7,19 +6,22 @@
         flex-direction: column
         box-sizing: border-box
 
+    &__item_size_1
+        grid-column: span 4
+
+        @include tablet
+            grid-column: span 8
+
+        @include desktop
+            grid-column: span 12
+
     &__item_size_2
         grid-row: span 1
         grid-column: span 4
 
-        .image-list__item-photo-img
-            height: 100%
-
         @include desktop
             grid-column: span 6
             grid-row: span 2
-
-        .image-list__item-photo
-            flex-grow: 1
 
     &__item_size_4
         grid-row: span 1
@@ -33,6 +35,7 @@
         display: flex  
 
     &__item-photo-img
+        height: 100%
         width: 100%
         object-fit: cover
 
@@ -43,5 +46,6 @@
         margin-top: 6px
         color: $on-background-2
 
-    @include desktop
-        grid-row-gap: 16px
+    &__item-caption
+        margin-top: 12px
+        color: $on-background-2
