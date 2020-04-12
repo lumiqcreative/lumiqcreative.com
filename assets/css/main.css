@@ -35,6 +35,12 @@
   src: url(../fonts/archia-bold.woff2);
 }
 
+@font-face {
+  font-weight: 500;
+  font-family: "manrope";
+  src: url(../fonts/manrope-regular.woff2);
+}
+
 .block {
   padding-left: 16px;
   padding-right: 16px;
@@ -140,10 +146,11 @@
 }
 
 .button_style_4 {
+  font-family: "manrope";
   font-weight: 500;
   line-height: 18px;
   color: #908da5;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
 }
 
 @media (min-width: 769px) {
@@ -159,14 +166,13 @@
 
 .container {
   margin: 0 auto;
-  max-width: 1180px;
+  max-width: 1200px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .copy {
   margin: 0;
-  font-family: "archia", sans-serif;
 }
 
 .copy_style_1 {
@@ -174,6 +180,7 @@
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.03em;
+  font-family: "archia", sans-serif;
 }
 
 @media (min-width: 769px) {
@@ -194,7 +201,8 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.01em;
+  font-family: "manrope", sans-serif;
 }
 
 @media (min-width: 769px) {
@@ -208,7 +216,16 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.03em;
+  font-family: "manrope", sans-serif;
+}
+
+.copy_style_4 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  font-family: "manrope", sans-serif;
 }
 
 .footer {
@@ -384,10 +401,10 @@
 }
 
 .headline_style_6 {
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
 }
 
 .hero__headline {
@@ -511,12 +528,12 @@
 }
 
 .image-list__item-copy {
-  margin-top: 6px;
+  margin-top: 4px;
   color: #908da5;
 }
 
 .image-list__item-caption {
-  margin-top: 12px;
+  margin-top: 16px;
   color: #908da5;
 }
 
@@ -702,7 +719,7 @@
 
 @media (min-width: 1024px) {
   .summary-page__highlights-image-list {
-    grid-row-gap: 16px;
+    grid-row-gap: 20px;
   }
 }
 
@@ -871,6 +888,6 @@
 }
 
 .work-page__image-list {
-  grid-row-gap: 24px;
+  grid-row-gap: 28px;
 }
 /*# sourceMappingURL=main.css.map */
