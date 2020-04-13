@@ -25,7 +25,7 @@ $inner-default-height: 72px
         @include tablet
             display: flex
 
-    &__menu-icon-holder
+    &__menu-button-holder
         margin-left: auto
         margin-right: -16px
 
@@ -37,10 +37,32 @@ $inner-default-height: 72px
         display: flex
         cursor: pointer
         align-items: center
-        color: $on-background-2
 
-    &__item_active
+    &__text-link
         color: $on-background-1
+
+        &::after
+            top: 0
+            left: 16px
+            right: 16px
+            bottom: 0
+            content: ""
+            position: absolute
+            border-bottom: 0px solid $on-background-3
+            transition: border-width 0.1s ease
+
+        &:hover::after
+            border-width: 4px
+            transition: border-width 0.1s ease
+
+    &__text-link_active::after
+        top: 0
+        left: 16px
+        right: 16px
+        bottom: 0
+        content: ""
+        position: absolute
+        border-bottom: 4px solid $primary
 
     &__logo-img
         height: 26px
@@ -55,7 +77,6 @@ $inner-default-height: 72px
         justify-content: center
         height: calc(100vh - 72px)
         background-color: $surface-1
-        transition: transform 0.3s ease
 
         &_open
             display: flex
@@ -69,3 +90,37 @@ $inner-default-height: 72px
 
         &_active
             color: $primary
+
+    &__menu-icon
+        width: 18px
+        height: 8px
+        position: relative
+
+        &::before
+            left: 0
+            top: 0
+            right: 0
+            content: ""
+            height: 2px
+            position: absolute
+            background-color: $on-background-1
+            transition: transform 0.3s ease
+
+        &::after
+            left: 0
+            bottom: 0
+            right: 0
+            content: ""
+            height: 2px
+            position: absolute
+            background-color: $on-background-1
+            transition: transform 0.3s ease
+
+    &__menu-icon_clicked
+        &::before
+            transform: translateY(3px) rotate(45deg)
+            transition: transform 0.3s ease
+
+        &::after
+            transform: translateY(-3px) rotate(-45deg)
+            transition: transform 0.3s ease
