@@ -1,0 +1,135 @@
+.header
+    top: 0
+    left: 0
+    right: 0
+    z-index: 1
+    position: fixed
+    background-color: $color-surface
+
+    &__main
+        height: 72px
+        display: flex
+        align-items: center
+
+    &__logo
+        height: 100%
+        padding: 16px
+        display: flex
+        cursor: pointer
+        margin-left: -16px
+        align-items: center
+        box-sizing: border-box
+
+    &__logo-img
+        height: 28px
+        margin: auto 0
+
+        @include tablet
+            height: 30px
+
+    &__nav
+        height: 100%
+        display: none
+        margin-left: auto
+        margin-right: -16px
+
+        @include tablet
+            display: flex
+
+    &__nav-link
+        padding: 16px
+        height: 100%
+        display: flex
+        cursor: pointer
+        position: relative
+        align-items: center
+        box-sizing: border-box
+        color: $color-on-background-1
+
+        &::after
+            top: 0
+            bottom: 0
+            left: 16px
+            right: 16px
+            content: ""
+            position: absolute
+            transition: border-width 0.1s ease
+            border-bottom: 0px solid $color-on-background-3
+
+        &:hover::after
+            border-width: 4px
+            transition: border-width 0.1s ease
+
+    &__nav-link_active::after
+        border-width: 4px
+        border-color: $color-primary
+
+    &__drawer
+        display: none
+        flex-direction: column
+        justify-content: center
+        height: calc(100vh - 72px)
+        background-color: $color-surface
+
+    &__drawer_open
+        display: flex
+
+        @include tablet
+            display: none
+
+    &__drawer-link
+        padding: 8px 0
+        cursor: pointer
+        color: $color-on-background-1
+
+    &__drawer-link_active
+        color: $color-primary
+
+    &__menu-toggle
+        height: 100%
+        padding: 16px
+        display: flex
+        cursor: pointer
+        margin-left: auto
+        margin-right: -16px
+        align-items: center
+        box-sizing: border-box
+
+        @include tablet
+            display: none
+
+    &__sandwich
+        width: 20px
+        height: 8px
+        display: block
+        margin: auto 0
+        position: relative
+
+        &::before 
+            top: 0
+            left: 0
+            right: 0
+            content: ""
+            height: 2px
+            position: absolute
+            transition: transform 0.3s ease
+            background-color: $color-on-surface-1
+
+        &::after
+            left: 0
+            right: 0
+            bottom: 0
+            content: ""
+            height: 2px
+            position: absolute
+            transition: transform 0.3s ease
+            background-color: $color-on-surface-1
+
+    &__sandwich_appearance_x
+        &::before
+            transition: transform 0.3s ease
+            transform: translateY(3px) rotate(45deg)
+
+        &::after
+            transition: transform 0.3s ease
+            transform: translateY(-3px) rotate(-45deg)

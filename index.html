@@ -8,94 +8,86 @@
         <meta name="description" content="It’s just got harder to build a bad product.">
         <link rel="shortcut icon" href="https://raw.githubusercontent.com/lumiqcreative/brand/master/q-mark/q-mark-black.png">
     </head>
-    <body class="page summary-page">
-        <header class="top-bar block">
-            <div class="top-bar__inner-default horiz-rubber-box container">
-                <div class="top-bar__logo-holder vert-rubber-box">
-                    <a class="top-bar__logo top-bar__item vert-rubber-box">
-                        <img src="https://raw.githubusercontent.com/lumiqcreative/brand/master/word-mark/word-mark-black.svg?sanitize=true" class="top-bar__logo-img">
-                    </a>
-                </div>
-                <div class="top-bar__menu-holder vert-rubber-box">
-                    <a class="top-bar__item top-bar__text-link button button_style_3">Work</a>
-                    <a class="top-bar__item top-bar__text-link button button_style_3">About</a>
-                    <a class="top-bar__item top-bar__text-link button button_style_3">Contact</a>
-                </div>
-                <div class="top-bar__menu-button-holder vert-rubber-box">
-                    <a class="top-bar__menu-button top-bar__item vert-rubber-box">
-                        <span class="top-bar__menu-icon"></span>
-                    </a>
-                </div>
+    <body class="page home">
+        <header class="header">
+            <div class="header__main container">
+                <a href="/" class="header__logo">
+                    <img src="https://raw.githubusercontent.com/lumiqcreative/brand/master/word-mark/word-mark-black.svg?sanitize=true" class="header__logo-img">
+                </a>
+                <nav class="header__nav">
+                    <a class="header__nav-link button button_style_2">Work</a>
+                    <a class="header__nav-link button button_style_2">About</a>
+                    <a class="header__nav-link button button_style_2">Contact</a>
+                </nav>
+                <a class="header__menu-toggle">
+                    <span class="header__sandwich"></span>
+                </a>
             </div>
-            <div class="top-bar__inner-menu-drawer container">
-                <a class="top-bar__menu-drawer-item headline headline_style_1 horiz-rubber-box">Work</a>
-                <a class="top-bar__menu-drawer-item headline headline_style_1 horiz-rubber-box">About</a>
-                <a class="top-bar__menu-drawer-item headline headline_style_1 horiz-rubber-box">Contact</a>
+            <div class="header__drawer container">
+                <a class="header__drawer-link headline headline_style_1">Work</a>
+                <a class="header__drawer-link headline headline_style_1">About</a>
+                <a class="header__drawer-link headline headline_style_1">Contact</a>
             </div>
         </header>
-        <main class="main-default">
-            <section class="hero summary-page__hero block">
-                <div class="hero__inner-default container">
-                    <h1 class="hero__headline headline headline_style_1">It’s just got harder to&nbsp;build a&nbsp;bad product.</h1>
-                    <h2 class="hero__copy copy copy_style_1">With respect to my business line, I&nbsp;must confess I&nbsp;haven’t the tiniest inkling of what to call it. So if you please, glance below and work this out yourself.</h2>
-                    <a href="mailto:contact@lumiqcreative.com" class="hero__cta button button_style_1 button_arrow">Get in Touch</a>
-                </div>
+        <main class="main">
+            <section class="hero container home__hero">
+                <h1 class="hero__tagline headline headline_style_1">It’s just got harder to&nbsp;build a&nbsp;bad product.</h1>
+                <h2 class="hero__foreword copy copy_style_1">With respect to my business line, I&nbsp;must confess I&nbsp;haven’t the tiniest inkling of what to call it. So if you please, glance below and work this out yourself.</h2>
+                <a class="hero__button button button_style_1 button_decoration_arrow" href="mailto:contact@lumiqcreative.com">Get in Touch</a>
             </section>
-            <section class="module block summary-page__highlights">
-                <div class="module__inner-head container horiz-rubber-box">
-                    <h3 class="module__headline headline headline_style_3">Highlights</h3>
-                    <a href="https://twitter.com/lumiqcreative" class="module__cta button button_style_2">Show Portfolio</a>
-                </div>
-                <div class="module__inner-default image-list grid container summary-page__highlights-image-list">
-                    <article class="image-list__item image-list__item_size_2">
-                        <picture class="image-list__item-photo horiz-rubber-box summary-page__highlights-primary-photo">
+            <section class="section home__work-highlights container">
+                <header class="section__header">
+                    <h3 class="headline headline_style_3">Highlights</h3>
+                    <a href="https://twitter.com/lumiqcreative" class="section__button button button_style_2">Show Portfolio</a>
+                </header>
+                <div class="section__main work-tiles grid">
+                    <article class="work-tiles__tile work-tiles__tile_size_lg">
+                        <picture class="work-tiles__picture">
                             <source media="(min-width: 1024px)" srcset="assets/img/EBrz.png">
-                            <img src="assets/img/hoPH.png" class="image-list__item-photo-img">
+                            <img src="assets/img/hoPH.png" class="work-tiles__picture-img">
                         </picture>
-                        <h4 class="image-list__item-headline headline headline_style_6">2020 Rebrand</h4>
-                        <h5 class="image-list__item-copy copy copy_style_3">Personal</h5>
+                        <h4 class="work-tiles__headline headline headline_style_6">2020 Rebrand</h4>
+                        <h5 class="work-tiles__subtitle copy copy_style_3">Personal</h5>
                     </article>
-                    <a href="/work/liftapp" class="image-list__item image-list__item_size_4">
-                        <picture class="image-list__item-photo">
-                            <img src="assets/img/aQbP.png" class="image-list__item-photo-img">
+                    <a href="/work/liftapp" class="work-tiles__tile work-tiles__tile_size_sm">
+                        <picture class="work-tiles__picture">
+                            <img src="assets/img/aQbP.png" class="work-tiles__picture-img">
                         </picture>
-                        <h4 class="image-list__item-headline headline headline_style_6">LiftApp</h4>
-                        <h5 class="image-list__item-copy copy copy_style_3">Co-Design &amp; UX Writing</h5>
+                        <h4 class="work-tiles__headline headline headline_style_6">LiftApp</h4>
+                        <h5 class="work-tiles__subtitle copy copy_style_3">Co-Design &amp; UX Writing</h5>
                     </a>
-                    <article class="image-list__item image-list__item_size_4">
-                        <picture class="image-list__item-photo">
-                            <img src="assets/img/RYKZ.png" class="image-list__item-photo-img">
+                    <article class="work-tiles__tile work-tiles__tile_size_sm">
+                        <picture class="work-tiles__picture">
+                            <img src="assets/img/RYKZ.png" class="work-tiles__picture-img">
                         </picture>
-                        <h4 class="image-list__item-headline headline headline_style_6">‘Swift Walls’</h4>
-                        <h5 class="image-list__item-copy copy copy_style_3">App Icon</h5>
+                        <h4 class="work-tiles__headline headline headline_style_6">‘Swift Walls’</h4>
+                        <h5 class="work-tiles__subtitle copy copy_style_3">App Icon</h5>
                     </article>
-                    <article class="image-list__item image-list__item_size_4">
-                        <picture class="image-list__item-photo">
-                            <img src="assets/img/nDmn.png" class="image-list__item-photo-img">
+                    <article class="work-tiles__tile work-tiles__tile_size_sm">
+                        <picture class="work-tiles__picture">
+                            <img src="assets/img/nDmn.png" class="work-tiles__picture-img">
                         </picture>
-                        <h4 class="image-list__item-headline headline headline_style_6">‘Lawnchair’</h4>
-                        <h5 class="image-list__item-copy copy copy_style_3">Colour Picker</h5>
+                        <h4 class="work-tiles__headline headline headline_style_6">‘Lawnchair’</h4>
+                        <h5 class="work-tiles__subtitle copy copy_style_3">Colour Picker</h5>
                     </article>
-                    <article class="image-list__item image-list__item_size_4">
-                        <picture class="image-list__item-photo">
-                            <img src="assets/img/nDmn.png" class="image-list__item-photo-img">
+                    <article class="work-tiles__tile work-tiles__tile_size_sm">
+                        <picture class="work-tiles__picture">
+                            <img src="assets/img/nDmn.png" class="work-tiles__picture-img">
                         </picture>
-                        <h4 class="image-list__item-headline headline headline_style_6">‘Lawnchair’</h4>
-                        <h5 class="image-list__item-copy copy copy_style_3">Shortcut Editor</h5>
+                        <h4 class="work-tiles__headline headline headline_style_6">‘Lawnchair’</h4>
+                        <h5 class="work-tiles__subtitle copy copy_style_3">Shortcut Editor</h5>
                     </article>
                 </div>
             </section>
         </main>
-        <footer class="footer summary-page__footer">
-            <div class="footer__inner-default container horiz-rubber-box">
-                <p class="footer__copyright-notice footer__item copy copy_style_2">© <script type="text/javascript">document.write(new Date().getFullYear());</script> Lumiq Creative</p>
-                <nav class="footer__menu-holder">
-                    <a href="https://twitter.com/lumiqcreative" class="footer__item button button_style_4">Twitter</a>
-                    <a href="https://github.com/lumiqcreative" class="footer__item button button_style_4">GitHub</a>
-                    <a href="https://instagram.com/lumiqcreative" class="footer__item button button_style_4">Instagram</a>
-                </nav>
+        <footer class="footer container home__footer">
+            <p class="footer__copyright-note copy copy_style_2">© <script type="text/javascript">document.write(new Date().getFullYear());</script> Lumiq Creative</p>
+            <div class="footer__menu">
+                <a class="footer__menu-link button button_style_4" href="https://twitter.com/lumiqcreative">Twitter</a>
+                <a class="footer__menu-link button button_style_4" href="https://github.com/lumiqcreative">GitHub</a>
+                <a class="footer__menu-link button button_style_4" href="https://instagram.com/lumiqcreative">Instagram</a>
             </div>
         </footer>
-        <script src="assets/common-blocks/top-bar/top-bar.js"></script>
+        <script src="assets/common-blocks/header/header.js"></script>
     </body>
 </html>

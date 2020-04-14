@@ -1,6 +1,3 @@
-@import "../../common-props/breakpoints"
-@import "../../common-props/colors"
-
 .button
     font-size: 16px
     cursor: pointer
@@ -10,63 +7,67 @@
     display: inline-flex
     text-decoration: none
     box-sizing: border-box
-    font-family: "archia", sans-serif
+
+    &__icon
+        margin-right: 8px
+        margin-bottom: 2px
 
     @include tablet
         font-size: 18px
 
 .button_style_1
     height: 52px
-    padding: 0 22px
-    color: $primary
+    padding: 0 24px
     font-weight: 700
     border-radius: 4px
-    letter-spacing: -0.01em
+    color: $color-primary
     justify-content: center
-    transition: color 0.3s ease
-    box-shadow: inset 0 0 0 1px $primary
+    letter-spacing: -0.02em
+    transition: color 0.24s ease
+    font-family: "archia", sans-serif
+    box-shadow: inset 0 0 0 1px $color-primary
 
     &:hover
-        color: $on-primary
-        transition: color 0.3s ease
+        color: $color-on-primary
+        transition: color 0.24s ease
 
         &::before
             transform: scaleY(1)
-            transition: transform 0.3s ease
+            transition: transform 0.24s ease
 
     &::before
         top: 0
         left: 0
         right: 0
         bottom: 0
-        z-index: -1
         content: ""
+        z-index: -1
         position: absolute
         transform: scaleY(0)
-        background: $primary
         transform-origin: 50% 100%
-        transition: transform 0.3s ease
+        background-color: $color-primary
+        transition: transform 0.24s ease
 
 .button_style_2
-    color: $primary
     font-weight: 700
+    color: $color-primary
     letter-spacing: -0.02em
+    font-family: "archia", sans-serif
 
 .button_style_3
     font-weight: 600
-    color: $on-background-1
     letter-spacing: -0.02em
+    font-family: "archia", sans-serif
 
 .button_style_4
-    font-family: "manrope"
     font-weight: 500
     line-height: 18px
-    color: $on-background-2
     letter-spacing: 0.02em
+    font-family: "manrope", sans-serif
 
     @include tablet
         line-height: 24px
 
-.button_arrow::after
+.button_decoration_arrow::after
     content: "→"
     margin-left: 16px
