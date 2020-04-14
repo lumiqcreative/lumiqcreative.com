@@ -784,11 +784,20 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-decoration: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-decoration: none;
+}
+
+.work-tiles__tile:hover .work-tiles__picture-img {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+  -webkit-transition: -webkit-transform 0.32s ease;
+  transition: -webkit-transform 0.32s ease;
+  transition: transform 0.32s ease;
+  transition: transform 0.32s ease, -webkit-transform 0.32s ease;
 }
 
 .work-tiles__tile_size_sm {
@@ -814,13 +823,14 @@
 }
 
 .work-tiles__picture {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 100%;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
 }
 
 .work-tiles__picture-img {
@@ -828,6 +838,10 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: -webkit-transform 0.32s ease;
+  transition: -webkit-transform 0.32s ease;
+  transition: transform 0.32s ease;
+  transition: transform 0.32s ease, -webkit-transform 0.32s ease;
 }
 
 .work-tiles__headline {

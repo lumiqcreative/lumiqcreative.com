@@ -3,8 +3,12 @@
 
     &__tile
         display: flex
-        flex-direction: column
         text-decoration: none
+        flex-direction: column
+
+        &:hover .work-tiles__picture-img
+            transform: scale(1.04)
+            transition: transform 0.32s ease
 
     &__tile_size_sm
         grid-row: span 1
@@ -21,14 +25,16 @@
             grid-column: span 6
 
     &__picture
-        display: flex
-        flex-grow: 1
         width: 100%
+        flex-grow: 1
+        display: flex
+        overflow: hidden
 
     &__picture-img
         width: 100%
         height: 100%
         object-fit: cover
+        transition: transform 0.32s ease
 
     &__headline
         margin-top: 10px
