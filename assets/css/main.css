@@ -680,6 +680,10 @@
   background-color: white;
 }
 
+.page_no-scroll {
+  overflow: hidden;
+}
+
 .section__header {
   display: -webkit-box;
   display: -ms-flexbox;
