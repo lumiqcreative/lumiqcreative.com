@@ -21,13 +21,13 @@
 .button_style_1
     height: 52px
     padding: 0 24px
-    font-weight: 700
+    font-weight: 600
     border-radius: 4px
     color: $color-primary
     justify-content: center
-    letter-spacing: -0.02em
+    letter-spacing: -0.01em
+    font-family: $font-stack-1
     transition: color 0.24s ease
-    font-family: "archia", sans-serif
     box-shadow: inset 0 0 0 1px $color-primary
 
     &:hover
@@ -52,20 +52,21 @@
         transition: transform 0.24s ease
 
 .button_style_2
-    font-weight: 700
+    font-weight: 500
     color: $color-primary
     letter-spacing: -0.02em
-    font-family: "archia", sans-serif
+    font-family: $font-stack-1
 
     .button__icon
         fill: $color-primary
 
-.button_style_3
-    font-weight: 600
-    letter-spacing: -0.02em
-    font-family: "archia", sans-serif
+    &:hover
+        color: $color-on-background-1
 
-.button_style_4
+        .button__icon
+            fill: $color-on-background-1
+
+.button_style_3
     font-weight: 500
     line-height: 18px
     letter-spacing: 0.02em
@@ -77,3 +78,8 @@
 .button_decoration_arrow::after
     content: "→"
     margin-left: 16px
+
+.button_decoration_icon:hover
+    .download-icon__transformable-path
+        transform: translateY(16px)
+        transition: transform 0.3s ease

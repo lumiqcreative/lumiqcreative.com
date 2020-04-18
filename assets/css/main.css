@@ -1,44 +1,121 @@
 @charset "UTF-8";
 @font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-family: "manrope";
+  src: url(/assets/fonts/manrope-regular.woff2);
+}
+
+@font-face {
+  font-weight: 100;
+  font-style: normal;
+  font-family: "silka";
+  src: url("/assets/fonts/silka-thin.woff2");
+}
+
+@font-face {
+  font-weight: 100;
+  font-style: italic;
+  font-family: "silka";
+  src: url("/assets/fonts/silka-thin-italic.woff2");
+}
+
+@font-fac {
+  font-weight: 200;
+  font-style: normal;
+  font-family: "silka";
+  src: url("/assets/fonts/silka-extra-light.woff2");
+}
+
+@font-face {
+  font-weight: 200;
+  font-style: italic;
+  font-family: "silka";
+  src: url("/assets/fonts/silka-extra-light-italic.woff2");
+}
+
+@font-face {
   font-weight: 300;
-  font-family: "archia";
-  src: url(../fonts/archia-thin.woff2);
+  font-style: normal;
+  font-family: "silka";
+  src: url("/assets/fonts/silka-light.woff2");
+}
+
+@font-face {
+  font-weight: 300;
+  font-style: italic;
+  font-family: "silka";
+  src: url("/assets/fonts/silka-light-italic.woff2");
 }
 
 @font-face {
   font-weight: 400;
-  font-family: "archia";
-  src: url(../fonts/archia-light.woff2);
+  font-style: normal;
+  font-family: "silka";
+  src: url("/assets/fonts/silka-regular.woff2");
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: italic;
+  font-family: "silka";
+  src: url("/assets/fonts/silka-regular-italic.woff2");
 }
 
 @font-face {
   font-weight: 500;
-  font-family: "archia";
-  src: url(../fonts/archia-regular.woff2);
+  font-style: normal;
+  font-family: "silka";
+  src: url("/assets/fonts/silka-medium.woff2");
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: italic;
+  font-family: "silka";
+  src: url("/assets/fonts/silka-medium-italic.woff2");
 }
 
 @font-face {
   font-weight: 600;
-  font-family: "archia";
-  src: url(../fonts/archia-medium.woff2);
+  font-style: normal;
+  font-family: "silka";
+  src: url("/assets/fonts/silka-semibold.woff2");
+}
+
+@font-face {
+  font-weight: 600;
+  font-style: italic;
+  font-family: "silka";
+  src: url("/assets/fonts/silka-semibold-italic.woff2");
 }
 
 @font-face {
   font-weight: 700;
-  font-family: "archia";
-  src: url(../fonts/archia-semibold.woff2);
+  font-style: normal;
+  font-family: "silka";
+  src: url("/assets/fonts/silka-bold.woff2");
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: italic;
+  font-family: "silka";
+  src: url("/assets/fonts/silka-bold-italic.woff2");
 }
 
 @font-face {
   font-weight: 800;
-  font-family: "archia";
-  src: url(../fonts/archia-bold.woff2);
+  font-style: normal;
+  font-family: "silka";
+  src: url("/assets/fonts/silka-black.woff2");
 }
 
 @font-face {
-  font-weight: 500;
-  font-family: "manrope";
-  src: url(../fonts/manrope-regular.woff2);
+  font-weight: 800;
+  font-style: italic;
+  font-family: "silka";
+  src: url("/assets/fonts/silka-black-italic.woff2");
 }
 
 .button {
@@ -75,16 +152,16 @@
 .button_style_1 {
   height: 52px;
   padding: 0 24px;
-  font-weight: 700;
+  font-weight: 600;
   border-radius: 4px;
   color: #7700ff;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
+  font-family: "silka", "helvetica neue", "helvetica", sans-serif;
   -webkit-transition: color 0.24s ease;
   transition: color 0.24s ease;
-  font-family: "archia", sans-serif;
   -webkit-box-shadow: inset 0 0 0 1px #7700ff;
           box-shadow: inset 0 0 0 1px #7700ff;
 }
@@ -124,23 +201,25 @@
 }
 
 .button_style_2 {
-  font-weight: 700;
+  font-weight: 500;
   color: #7700ff;
   letter-spacing: -0.02em;
-  font-family: "archia", sans-serif;
+  font-family: "silka", "helvetica neue", "helvetica", sans-serif;
 }
 
 .button_style_2 .button__icon {
   fill: #7700ff;
 }
 
-.button_style_3 {
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  font-family: "archia", sans-serif;
+.button_style_2:hover {
+  color: #0b0a15;
 }
 
-.button_style_4 {
+.button_style_2:hover .button__icon {
+  fill: #0b0a15;
+}
+
+.button_style_3 {
   font-weight: 500;
   line-height: 18px;
   letter-spacing: 0.02em;
@@ -148,7 +227,7 @@
 }
 
 @media (min-width: 769px) {
-  .button_style_4 {
+  .button_style_3 {
     line-height: 24px;
   }
 }
@@ -156,6 +235,15 @@
 .button_decoration_arrow::after {
   content: "→";
   margin-left: 16px;
+}
+
+.button_decoration_icon:hover .download-icon__transformable-path {
+  -webkit-transform: translateY(16px);
+          transform: translateY(16px);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .container {
@@ -178,10 +266,10 @@
 
 .copy_style_1 {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.03em;
-  font-family: "archia", sans-serif;
+  font-family: "silka", "helvetica neue", "helvetica", sans-serif;
 }
 
 @media (min-width: 769px) {
@@ -288,14 +376,10 @@
           align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transition: color 0.24s ease;
-  transition: color 0.24s ease;
   color: #908da5;
 }
 
 .footer__menu-link:hover {
-  -webkit-transition: color 0.24s ease;
-  transition: color 0.24s ease;
   color: #0b0a15;
 }
 
@@ -372,6 +456,7 @@
 .header__logo-img {
   height: 28px;
   margin: auto 0;
+  fill: #0b0a15;
 }
 
 @media (min-width: 769px) {
@@ -546,12 +631,12 @@
 
 .headline {
   margin: 0;
-  font-family: "archia", sans-serif;
+  font-family: "silka", "helvetica neue", "helvetica", sans-serif;
 }
 
 .headline_style_1 {
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 52px;
   letter-spacing: -0.06em;
 }
@@ -572,6 +657,7 @@
 
 .headline_style_2 {
   font-size: 36px;
+  font-weight: 600;
   line-height: 40px;
   letter-spacing: -0.04em;
 }
@@ -592,6 +678,7 @@
 
 .headline_style_3 {
   font-size: 28px;
+  font-weight: 600;
   line-height: 44px;
   letter-spacing: -0.04em;
 }
@@ -604,7 +691,7 @@
 
 .headline_style_6 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 24px;
   letter-spacing: -0.03em;
 }
@@ -628,19 +715,19 @@
 
 .hero__foreword {
   margin-top: 28px;
-  max-width: 450px;
+  max-width: 440px;
   color: #0b0a15;
 }
 
 @media (min-width: 769px) {
   .hero__foreword {
-    max-width: 500px;
+    max-width: 488px;
   }
 }
 
 @media (min-width: 1024px) {
   .hero__foreword {
-    max-width: 550px;
+    max-width: 538px;
   }
 }
 
