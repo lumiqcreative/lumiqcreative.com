@@ -4,12 +4,15 @@
 
     &__subtitle
         margin-top: 6px
-        color: $color-on-background-2
+        color: $color-on-background_emphasis_medium
 
     &__copy
-        max-width: 600px
+        max-width: 580px
         margin-top: 24px
-        color: $color-on-background-1
+        color: $color-on-background_emphasis_high
+
+        @include tablet
+            max-width: 600px
 
     &__button
         padding: 4px 0

@@ -23,7 +23,7 @@
     &__logo-img
         height: 28px
         margin: auto 0
-        fill: $color-on-background-1
+        fill: $color-on-background_emphasis_high
 
         @include tablet
             height: 30px
@@ -45,7 +45,7 @@
         position: relative
         align-items: center
         box-sizing: border-box
-        color: $color-on-background-1
+        color: $color-on-background_emphasis_high
 
         &::after
             top: 0
@@ -55,7 +55,7 @@
             content: ""
             position: absolute
             transition: border-width 0.12s ease
-            border-bottom: 0px solid $color-on-background-3
+            border-bottom: 0px solid $color-surface-overlay
 
         &:hover::after
             border-width: 4px
@@ -80,7 +80,7 @@
     &__drawer-link
         padding: 8px 0
         cursor: pointer
-        color: $color-on-background-1
+        color: $color-on-background_emphasis_high
 
     &__drawer-link_active
         color: $color-primary
@@ -113,7 +113,7 @@
             height: 2px
             position: absolute
             transition: transform 0.24s ease
-            background-color: $color-on-surface-1
+            background-color: $color-on-surface_emphasis_high
 
         &::after
             left: 0
@@ -123,7 +123,7 @@
             height: 2px
             position: absolute
             transition: transform 0.24s ease
-            background-color: $color-on-surface-1
+            background-color: $color-on-surface_emphasis_high
 
     &__sandwich_appearance_x
         &::before

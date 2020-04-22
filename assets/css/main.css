@@ -212,11 +212,11 @@
 }
 
 .button_style_2:hover {
-  color: #0b0a15;
+  color: black;
 }
 
 .button_style_2:hover .button__icon {
-  fill: #0b0a15;
+  fill: black;
 }
 
 .button_style_3 {
@@ -380,7 +380,7 @@
 }
 
 .footer__menu-link:hover {
-  color: #0b0a15;
+  color: black;
 }
 
 .footer__copyright-note {
@@ -456,7 +456,7 @@
 .header__logo-img {
   height: 28px;
   margin: auto 0;
-  fill: #0b0a15;
+  fill: black;
 }
 
 @media (min-width: 769px) {
@@ -493,7 +493,7 @@
           align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #0b0a15;
+  color: black;
 }
 
 .header__nav-link::after {
@@ -546,7 +546,7 @@
 .header__drawer-link {
   padding: 8px 0;
   cursor: pointer;
-  color: #0b0a15;
+  color: black;
 }
 
 .header__drawer-link_active {
@@ -594,7 +594,7 @@
   transition: -webkit-transform 0.24s ease;
   transition: transform 0.24s ease;
   transition: transform 0.24s ease, -webkit-transform 0.24s ease;
-  background-color: #0b0a15;
+  background-color: black;
 }
 
 .header__sandwich::after {
@@ -608,7 +608,7 @@
   transition: -webkit-transform 0.24s ease;
   transition: transform 0.24s ease;
   transition: transform 0.24s ease, -webkit-transform 0.24s ease;
-  background-color: #0b0a15;
+  background-color: black;
 }
 
 .header__sandwich_appearance_x::before {
@@ -698,7 +698,7 @@
 
 .hero__tagline {
   max-width: 360px;
-  color: #0b0a15;
+  color: black;
 }
 
 @media (min-width: 769px) {
@@ -716,7 +716,7 @@
 .hero__foreword {
   margin-top: 28px;
   max-width: 440px;
-  color: #0b0a15;
+  color: black;
 }
 
 @media (min-width: 769px) {
@@ -793,7 +793,7 @@
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  color: #0b0a15;
+  color: black;
 }
 
 .section__button {
@@ -866,9 +866,15 @@
 }
 
 .work-intro__copy {
-  max-width: 600px;
+  max-width: 580px;
   margin-top: 24px;
-  color: #0b0a15;
+  color: black;
+}
+
+@media (min-width: 769px) {
+  .work-intro__copy {
+    max-width: 600px;
+  }
 }
 
 .work-intro__button {
@@ -952,7 +958,7 @@
 
 .work-tiles__headline {
   margin-top: 10px;
-  color: #0b0a15;
+  color: black;
 }
 
 .work-tiles__subtitle {
