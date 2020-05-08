@@ -1,0 +1,25 @@
+.table
+    &__row
+        width: 100%
+        display: flex
+        padding: 16px 0
+        box-sizing: border-box
+        justify-content: space-between
+
+        &:not(:first-child)
+            padding-top: 15px
+            border-top: 1px solid $color-surface-overlay
+
+    &__detail
+        display: flex
+        margin-left: auto
+        justify-content: center
+
+    &__label
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+    &__subtitle
+        margin-top: 6px
+        color: $color-on-surface_emphasis_medium
