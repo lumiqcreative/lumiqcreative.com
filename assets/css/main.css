@@ -933,35 +933,35 @@
   color: #908da5;
 }
 
-.work-intro {
+.intro {
   margin-top: 40px;
   margin-bottom: 36px;
 }
 
-.work-intro__subtitle {
+.intro__subtitle {
   margin-top: 6px;
   color: #908da5;
 }
 
-.work-intro__copy {
+.intro__copy {
   max-width: 580px;
   margin-top: 24px;
   color: black;
 }
 
 @media (min-width: 769px) {
-  .work-intro__copy {
+  .intro__copy {
     max-width: 612px;
   }
 }
 
-.work-intro__button {
+.intro__button {
   padding: 4px 0;
   margin-top: 20px;
 }
 
 @media (min-width: 769px) {
-  .work-intro {
+  .intro {
     margin-top: 48px;
   }
 }
