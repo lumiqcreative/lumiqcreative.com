@@ -324,6 +324,7 @@
 }
 
 .cover__cover-img {
+  height: 100%;
   margin: 0 -20px;
   width: calc(100% + 40px);
 }
@@ -332,6 +333,7 @@
   .cover__cover-img {
     margin: 0;
     width: 100%;
+    height: 100%;
   }
 }
 
