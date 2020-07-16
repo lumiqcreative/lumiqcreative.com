@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Header from "../components/header";
-import Footer from "../components/footer";
-import Hero from "../components/hero";
-import Library from "../components/library";
+import Header from "components/header";
+import Footer from "components/footer";
+import Hero from "components/hero";
+import Library from "components/library";
 
 export default function Home() {
   return (
