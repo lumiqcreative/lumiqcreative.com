@@ -56,7 +56,7 @@ class LibraryFilters extends React.Component {
         key="All Works"
         onClick={this.props.onFilterCategoryChange}
       >
-        All Work
+        All Works
       </LibraryFilter>,
     ];
     categories.forEach((category) => {
