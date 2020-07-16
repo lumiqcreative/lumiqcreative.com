@@ -1,6 +1,6 @@
 {
-  "name": "learn-starter",
-  "version": "0.1.0",
+  "name": "lumiqcreative.com",
+  "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
