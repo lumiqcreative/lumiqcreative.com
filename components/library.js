@@ -1,33 +1,8 @@
-import TableRow from "./table-row";
 import Chip from "./chip";
 import Holder from "./holder";
 import styles from "./library.module.sass";
+import TableRow from "./table-row";
 import Works from "../data/works";
-
-class LibraryWorks extends React.Component {
-  render() {
-    const works = [];
-    this.props.works.forEach((work) => {
-      if (
-        this.props.filterCategory &&
-        work.category !== this.props.filterCategory
-      ) {
-        return;
-      }
-      works.push(
-        <TableRow
-          className={styles.work}
-          href={work.link}
-          key={work.title}
-          subtitle={work.summary}
-          meta={work.published}
-          title={work.title}
-        />
-      );
-    });
-    return <div className={styles.works}>{works}</div>;
-  }
-}
 
 class LibraryFilter extends React.Component {
   render() {
@@ -51,10 +26,10 @@ class LibraryFilters extends React.Component {
     ];
     const filters = [
       <LibraryFilter
-        active={this.props.filterCategory === ""}
+        active={this.props.filterContent === ""}
         dataValue=""
         key="All Works"
-        onClick={this.props.onFilterCategoryChange}
+        onClick={this.props.onFilterContentChange}
       >
         All Works
       </LibraryFilter>,
@@ -62,10 +37,10 @@ class LibraryFilters extends React.Component {
     categories.forEach((category) => {
       filters.push(
         <LibraryFilter
-          active={this.props.filterCategory === category}
+          active={this.props.filterContent === category}
           dataValue={category}
           key={category}
-          onClick={this.props.onFilterCategoryChange}
+          onClick={this.props.onFilterContentChange}
         >
           {category}
         </LibraryFilter>
@@ -75,33 +50,52 @@ class LibraryFilters extends React.Component {
   }
 }
 
+class LibraryWorks extends React.Component {
+  render() {
+    const works = [];
+    this.props.works.forEach((work) => {
+      if (
+        work.category === this.props.filterContent ||
+        this.props.filterContent === ""
+      ) {
+        works.push(
+          <TableRow
+            className={styles.work}
+            href={work.link}
+            key={work.title}
+            meta={work.published}
+            subtitle={work.summary}
+            title={work.title}
+          />
+        );
+      }
+    });
+    return <div className={styles.works}>{works}</div>;
+  }
+}
+
 class Library extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      filterCategory: "",
+      filterContent: "",
     };
-    this.handleFilterCategoryChange = this.handleFilterCategoryChange.bind(
-      this
-    );
+    this.handleFilterContentChange = this.handleFilterContentChange.bind(this);
   }
-  handleFilterCategoryChange(event) {
+  handleFilterContentChange(event) {
     this.setState({
-      filterCategory: event.target.getAttribute("data-value"),
+      filterContent: event.target.getAttribute("data-value"),
     });
   }
   render() {
     return (
       <Holder>
         <LibraryFilters
+          filterContent={this.state.filterContent}
+          onFilterContentChange={this.handleFilterContentChange}
           works={Works}
-          filterCategory={this.state.filterCategory}
-          onFilterCategoryChange={this.handleFilterCategoryChange}
         />
-        <LibraryWorks
-          works={Works}
-          filterCategory={this.state.filterCategory}
-        />
+        <LibraryWorks filterContent={this.state.filterContent} works={Works} />
       </Holder>
     );
   }
