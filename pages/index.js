@@ -14,8 +14,16 @@ export default function Home() {
           name="description"
           content="I arrange shapes, command computers, and put together words."
         />
-        <meta name="twitter:card" content="summary" />
-        <meta property="og:image" content="/cover.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          property="og:image"
+          content="https://lumiqcreative.com/cover.png"
+        />
+        <meta property="og:title" content="Lumiq Creative" />
+        <meta
+          property="og:description"
+          content="I arrange shapes, command computers, and put together words."
+        />
       </Head>
       <Header />
       <Hero />
