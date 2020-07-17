@@ -4,8 +4,7 @@ const Works = [
     category: "Deliverables",
     summary: "Documentation for an Open-Source Wallpaper App Template",
     published: "15 Jul, 2020",
-    link:
-      "https://medium.com/@lumiqcreative/by-design-6-12-jul-2020-d69e53f27fd3?source=friends_link&sk=3d02f1e4504aff9d112050745ecebd4c",
+    link: "https://github.com/jahirfiquitiva/Frames/wiki",
   },
   {
     title: "By Design: 6–12 Jul 2020",
