@@ -28,10 +28,10 @@ class LibraryFilters extends React.Component {
       <LibraryFilter
         active={this.props.filterContent === ""}
         dataValue=""
-        key="All Works"
+        key="All Work"
         onClick={this.props.onFilterContentChange}
       >
-        All Works
+        All Work
       </LibraryFilter>,
     ];
     categories.forEach((category) => {
