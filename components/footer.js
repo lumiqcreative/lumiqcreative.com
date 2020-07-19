@@ -10,7 +10,7 @@ class FooterInner extends React.Component {
 
 class FooterCopy extends React.Component {
   render() {
-    return <Copy className={styles.text}>© 2018–2020 Lumiq Creative</Copy>;
+    return <Copy className={styles.copy}>© 2018–2020 Lumiq Creative</Copy>;
   }
 }
 

@@ -10,11 +10,19 @@
   --accent: hsl(264, 100%, 50%)
   --surface: hsl(0, 0%, 100%)
   --on-surface: hsl(0, 0%, 0%)
-  --on-surface-medium: hsl(256, 16%, 64%)
-  --border: hsl(256, 16%, 88%)
+  --on-surface-medium: hsl(264, 16%, 64%)
+  --border: hsl(264, 16%, 88%)
+
+  @media(prefers-color-scheme: dark)
+    --accent: hsl(264, 100%, 64%)
+    --surface: hsl(0, 0%, 0%)
+    --on-surface: hsl(0, 0%, 100%)
+    --on-surface-medium: hsl(264, 8%, 44%)
+    --border: hsl(264, 8%, 20%)
 
 body
   margin: 0
+  background: var(--surface)
 
 *
   box-sizing: border-box
