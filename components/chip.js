@@ -32,9 +32,9 @@ class ChipIndicator extends React.Component {
 class ChipLabel extends React.Component {
   render() {
     return (
-      <p className={styles.label} data-value={this.props.dataValue}>
+      <span className={styles.label} data-value={this.props.dataValue}>
         {this.props.children}
-      </p>
+      </span>
     );
   }
 }

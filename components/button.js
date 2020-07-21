@@ -16,7 +16,7 @@ class ButtonRoot extends React.Component {
 
 class ButtonLabel extends React.Component {
   render() {
-    return <p className={styles.label}>{this.props.children}</p>;
+    return <span className={styles.label}>{this.props.children}</span>;
   }
 }
 
