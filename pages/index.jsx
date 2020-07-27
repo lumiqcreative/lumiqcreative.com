@@ -1,8 +1,8 @@
+import FilterableWorkTable from "../components/filterable-work-table";
+import Footer from "../components/footer";
 import Head from "next/head";
-import Header from "components/header";
-import Footer from "components/footer";
-import Hero from "components/hero";
-import Library from "components/library";
+import Header from "../components/header";
+import Hero from "../components/hero";
 
 export default function Home() {
   return (
@@ -27,7 +27,7 @@ export default function Home() {
       </Head>
       <Header />
       <Hero />
-      <Library />
+      <FilterableWorkTable />
       <Footer />
     </>
   );

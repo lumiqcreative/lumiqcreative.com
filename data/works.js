@@ -1,4 +1,4 @@
-const Works = [
+const works = [
   {
     title: "Frames Docs",
     category: "Deliverables",
@@ -39,4 +39,4 @@ const Works = [
   },
 ];
 
-export default Works;
+export default works;

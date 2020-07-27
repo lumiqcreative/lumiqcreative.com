@@ -7,9 +7,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emotion/babel-preset-css-prop": "^10.0.27",
+    "@emotion/core": "^10.0.28",
     "next": "^9.4.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "sass": "^1.26.10"
-  }
+  },
+  "devDependencies": {}
 }

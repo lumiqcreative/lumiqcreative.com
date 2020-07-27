@@ -22,4 +22,4 @@ yarn-error.log*
 
 .vercel
 
-/public/fonts/*
+/public/fonts/graphik*
