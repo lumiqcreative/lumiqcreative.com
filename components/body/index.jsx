@@ -3,16 +3,16 @@ const Body = (props) => {
     <p
       className={props.className}
       css={{
-        fontFamily: "Inter",
+        fontFamily: '"Inter"',
         fontWeight: 400,
         margin: 0,
         fontSize: 15,
-        lineHeight: "20px",
+        lineHeight: '20px'
       }}
     >
       {props.children}
     </p>
-  );
-};
+  )
+}
 
-export default Body;
+export default Body

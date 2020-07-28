@@ -1,23 +1,23 @@
-import Container from "components/container";
-import Title from "components/title";
-import { colors, media } from "theme";
+import Container from 'components/container'
+import Title from 'components/title'
+import { colors, media } from 'theme'
 
 const Hero = () => {
   return (
     <Container>
       <div
         css={{
-          padding: "112px 0 48px 0",
-          [media[0]]: { padding: "128px 0 64px 0" },
+          padding: '112px 0 48px 0',
+          [media[0]]: { padding: '128px 0 64px 0' }
         }}
       >
         <Title
           css={{
             color: colors.onSurface,
-            hyphens: "auto",
+            hyphens: 'auto',
             maxWidth: 460,
-            [media[0]]: { hyphens: "none", maxWidth: 500 },
-            [media[1]]: { maxWidth: 620 },
+            [media[0]]: { hyphens: 'none', maxWidth: 500 },
+            [media[1]]: { maxWidth: 620 }
           }}
           as="h1"
           variant={1}
@@ -27,7 +27,7 @@ const Hero = () => {
         </Title>
       </div>
     </Container>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

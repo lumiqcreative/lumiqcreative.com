@@ -1,4 +1,4 @@
-import { colors, media } from "theme";
+import { colors, media } from 'theme'
 
 const WordMark = () => {
   return (
@@ -6,8 +6,8 @@ const WordMark = () => {
       css={{
         fill: colors.onSurface,
         height: 24,
-        margin: "auto 24px auto 0",
-        [media[0]]: { height: 28 },
+        margin: 'auto 24px auto 0',
+        [media[0]]: { height: 28 }
       }}
       viewBox="0 0 3282 1100"
       xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@ const WordMark = () => {
         </clipPath>
       </defs>
     </svg>
-  );
-};
+  )
+}
 
-export default WordMark;
+export default WordMark

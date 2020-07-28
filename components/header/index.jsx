@@ -1,30 +1,30 @@
-import Container from "components/container";
-import Button from "components/button";
-import WordMark from "./word-mark";
-import { colors } from "theme";
+import Container from 'components/container'
+import Button from 'components/button'
+import WordMark from './word-mark'
+import { colors } from 'theme'
 
 const Header = () => {
   return (
     <header
       css={{
         backgroundColor: colors.surface,
-        position: "fixed",
+        position: 'fixed',
         zIndex: 1,
-        width: "100%",
+        width: '100%'
       }}
     >
       <Container>
         <div
           css={{
-            display: "flex",
+            display: 'flex',
             height: 64,
-            alignItems: "center",
-            justifyContent: "space-between",
+            alignItems: 'center',
+            justifyContent: 'space-between'
           }}
         >
           <WordMark />
           <Button
-            css={{ margin: "auto 0 auto auto" }}
+            css={{ margin: 'auto 0 auto auto' }}
             href="mailto:contact@lumiqcreative.com"
           >
             Get in Touch
@@ -32,7 +32,7 @@ const Header = () => {
         </div>
       </Container>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

@@ -1,14 +1,14 @@
-import { useState } from "react";
-import FilterBar from "./filter-bar";
-import Container from "components/container";
-import works from "data/works";
-import WorkTable from "./work-table";
+import { useState } from 'react'
+import FilterBar from './filter-bar'
+import Container from 'components/container'
+import works from 'data/works'
+import WorkTable from './work-table'
 
 const FilterableWorkTable = () => {
-  const [filterText, updateFilterText] = useState("");
+  const [filterText, updateFilterText] = useState('')
   const handleFilterTextChange = (e) => {
-    updateFilterText(e.target.getAttribute("data-value"));
-  };
+    updateFilterText(e.target.getAttribute('data-value'))
+  }
   return (
     <Container>
       <FilterBar
@@ -18,7 +18,7 @@ const FilterableWorkTable = () => {
       />
       <WorkTable filterText={filterText} works={works} />
     </Container>
-  );
-};
+  )
+}
 
-export default FilterableWorkTable;
+export default FilterableWorkTable

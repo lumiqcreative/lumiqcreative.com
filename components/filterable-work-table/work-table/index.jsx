@@ -1,9 +1,9 @@
-import WorkRow from "../work-row";
+import WorkRow from '../work-row'
 
 const WorkTable = (props) => {
-  const rows = [];
+  const rows = []
   props.works.forEach((work) => {
-    if (work.category == props.filterText || props.filterText == "") {
+    if (work.category === props.filterText || props.filterText === '') {
       rows.push(
         <WorkRow
           href={work.link}
@@ -12,10 +12,10 @@ const WorkTable = (props) => {
           subtitle={work.summary}
           title={work.title}
         />
-      );
+      )
     }
-  });
-  return <div css={{ marginTop: 24 }}>{rows}</div>;
-};
+  })
+  return <div css={{ marginTop: 24 }}>{rows}</div>
+}
 
-export default WorkTable;
+export default WorkTable
