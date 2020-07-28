@@ -1,5 +1,14 @@
 const works = [
   {
+    title: "By Design: 13–26 Jul 2020",
+    category: "Stories",
+    summary:
+      "On the Nissan Rebrand, Twitter Direct Messages, and macOS’ New Battery Icon",
+    published: "26 Jul, 2020",
+    link:
+      "https://medium.com/@lumiqcreative/by-design-13-26-jul-2020-ed00fe346dd9?source=friends_link&sk=6585bff28c14272710082acf6e134f3c",
+  },
+  {
     title: "Frames Docs",
     category: "Deliverables",
     summary: "Documentation for an Open-Source Wallpaper App Template",
