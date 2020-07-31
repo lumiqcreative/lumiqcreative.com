@@ -1,5 +1,14 @@
 const works = [
   {
+    title: 'Lawnfeed Download Page',
+    category: 'Deliverables',
+    summary:
+      'Download Page for the Lawnchair Add-In',
+    published: '30 Jul, 2020',
+    link:
+      'https://lawnchair.app/lawnfeed'
+  },
+  {
     title: 'By Design: 13–26 Jul 2020',
     category: 'Stories',
     summary:
