@@ -5,7 +5,7 @@ type Props = {
   as: string
   variant: 1 | 3
   children: React.ReactNode
-  className: string
+  className?: string
 }
 
 const Title = ({ as, variant, children, className }: Props) => {

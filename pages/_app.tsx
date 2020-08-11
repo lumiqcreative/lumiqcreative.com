@@ -12,7 +12,7 @@ function App ({ Component, pageProps }: AppProps) {
               fontFamily: "'Graphik'",
               fontStyle: 'normal',
               fontWeight: 600,
-              src: "url('/fonts/graphik-600.woff2')"
+              src: `url("${process.env.GRAPHIK_600_URL}")`
             }
           },
           {
