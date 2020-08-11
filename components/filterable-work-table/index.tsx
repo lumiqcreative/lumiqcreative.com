@@ -5,9 +5,9 @@ import works from 'data/works'
 import WorkTable from './work-table'
 
 const FilterableWorkTable = () => {
-  const [filterText, updateFilterText] = useState('')
-  const handleFilterTextChange = (e) => {
-    updateFilterText(e.target.getAttribute('data-value'))
+  const [filterText, updateFilterText] = useState<string>('')
+  const handleFilterTextChange = (e: React.MouseEvent<HTMLElement>) => {
+    updateFilterText((e.target as HTMLElement).getAttribute('data-value') || '')
   }
   return (
     <Container>

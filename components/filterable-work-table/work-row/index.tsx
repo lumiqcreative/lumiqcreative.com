@@ -2,10 +2,17 @@ import Title from 'components/title'
 import Body from 'components/body'
 import { colors } from 'theme'
 
-const WorkRow = (props) => {
+type Props = {
+  href: string
+  title: string
+  subtitle: string
+  meta: string
+}
+
+const WorkRow = ({ href, title, subtitle, meta }: Props) => {
   return (
     <a
-      href={props.href}
+      href={href}
       css={{
         display: 'block',
         textDecoration: 'none',
@@ -15,10 +22,10 @@ const WorkRow = (props) => {
       }}
     >
       <Title as="h3" variant={3} css={{ color: colors.onSurface }}>
-        {props.title}
+        {title}
       </Title>
       <Body css={{ marginTop: 8, color: colors.onSurface }}>
-        {props.subtitle}
+        {subtitle}
         <span
           css={{
             display: 'inline',
@@ -26,7 +33,7 @@ const WorkRow = (props) => {
           }}
         >
           {' '}
-          – {props.meta}
+          – {meta}
         </span>
       </Body>
     </a>

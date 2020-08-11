@@ -1,7 +1,12 @@
-const Body = (props) => {
+type Props = {
+  className?: string
+  children: React.ReactNode
+}
+
+const Body = ({ className, children }: Props) => {
   return (
     <p
-      className={props.className}
+      className={className}
       css={{
         fontFamily: '"Inter"',
         fontWeight: 400,
@@ -10,7 +15,7 @@ const Body = (props) => {
         lineHeight: '20px'
       }}
     >
-      {props.children}
+      {children}
     </p>
   )
 }

@@ -1,25 +1,31 @@
 import Chip from 'components/chip'
 import { media } from 'theme'
+import Work from 'types'
 
-const FilterBar = (props) => {
+type Props = {
+  filterText: string
+  onFilterTextChange: (e: React.MouseEvent<HTMLElement>) => void
+  works: Work[]
+}
+
+const FilterBar = ({ filterText, onFilterTextChange, works }: Props) => {
   const items = [
     <Chip
-      active={props.filterText === ''}
-      value=""
+      active={filterText === ''}
       key="All Work"
-      onClick={props.onFilterTextChange}
+      onClick={onFilterTextChange}
     >
       All Work
     </Chip>
   ];
-  [...new Set(props.works.map((work) => work.category))].forEach((category) => {
+  [...new Set(works.map((work) => work.category))].forEach((category) => {
     items.push(
       <Chip
-        active={props.filterText === category}
+        active={filterText === category}
         css={{ margin: '8px 0 0 0', [media[0]]: { margin: '0 0 0 24px' } }}
         value={category}
         key={category}
-        onClick={props.onFilterTextChange}
+        onClick={onFilterTextChange}
       >
         {category}
       </Chip>

@@ -1,8 +1,8 @@
-import FilterableWorkTable from '../components/filterable-work-table'
-import Footer from '../components/footer'
+import FilterableWorkTable from 'components/filterable-work-table'
+import Footer from 'components/footer'
 import Head from 'next/head'
-import Header from '../components/header'
-import Hero from '../components/hero'
+import Header from 'components/header'
+import Hero from 'components/hero'
 
 export default function Home () {
   return (

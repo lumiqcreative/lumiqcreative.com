@@ -1,14 +1,21 @@
 import { media } from 'theme'
 import { jsx } from '@emotion/core'
 
-const Title = (props) => {
+type Props = {
+  as: string
+  variant: 1 | 3
+  children: React.ReactNode
+  className: string
+}
+
+const Title = ({ as, variant, children, className }: Props) => {
   return jsx(
-    props.as,
+    as,
     {
-      className: props.className,
+      className: className,
       css: [
         { margin: 0 },
-        props.variant === 1 && {
+        variant === 1 && {
           fontFamily: '"Graphik", "Inter"',
           fontSize: 40,
           letterSpacing: '-0.03em',
@@ -22,7 +29,7 @@ const Title = (props) => {
             lineHeight: '64px'
           }
         },
-        props.variant === 3 && {
+        variant === 3 && {
           fontFamily: '"Inter"',
           fontSize: 21,
           letterSpacing: '-0.01em',
@@ -30,7 +37,7 @@ const Title = (props) => {
         }
       ]
     },
-    props.children
+    children
   )
 }
 

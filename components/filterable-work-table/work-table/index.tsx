@@ -1,9 +1,15 @@
 import WorkRow from '../work-row'
+import Work from 'types'
 
-const WorkTable = (props) => {
-  const rows = []
-  props.works.forEach((work) => {
-    if (work.category === props.filterText || props.filterText === '') {
+type Props = {
+  works: Work[]
+  filterText: string
+}
+
+const WorkTable = ({ works, filterText }: Props) => {
+  const rows: React.ReactNode[] | null = []
+  works.forEach((work) => {
+    if (work.category === filterText || filterText === '') {
       rows.push(
         <WorkRow
           href={work.link}

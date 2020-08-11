@@ -1,6 +1,12 @@
 import { colors } from 'theme'
 
-const Button = (props) => {
+type Props = {
+  href: string
+  className?: string
+  children: React.ReactNode
+}
+
+const Button = ({ href, className, children }: Props) => {
   return (
     <a
       css={{
@@ -24,10 +30,10 @@ const Button = (props) => {
           transition: 'background 0.2s ease, color 0.2s ease'
         }
       }}
-      href={props.href}
-      className={props.className}
+      href={href}
+      className={className}
     >
-      {props.children}
+      {children}
     </a>
   )
 }

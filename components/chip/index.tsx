@@ -1,6 +1,14 @@
 import { colors } from 'theme'
 
-const Chip = (props) => {
+type Props = {
+  className?: string
+  value?: string
+  active: boolean
+  onClick: (e: React.MouseEvent<HTMLElement>) => void
+  children: React.ReactNode
+}
+
+const Chip = ({ className, value, active, onClick, children }: Props) => {
   return (
     <div
       css={{
@@ -10,9 +18,9 @@ const Chip = (props) => {
         display: 'inline-flex',
         height: 24
       }}
-      className={props.className}
-      data-value={props.value}
-      onClick={props.onClick}
+      className={className}
+      data-value={value}
+      onClick={onClick}
     >
       <div
         css={[
@@ -24,13 +32,13 @@ const Chip = (props) => {
             margin: 'auto 0',
             transition: 'border-color 0.2s ease, border-width 0.2s ease'
           },
-          props.active && {
+          active && {
             borderColor: colors.accent,
             borderWidth: 5,
             transition: 'border-color 0.2s ease, border-width 0.2s ease'
           }
         ]}
-        data-value={props.value}
+        data-value={value}
       />
       <span
         css={[
@@ -44,14 +52,14 @@ const Chip = (props) => {
             margin: '0 0 0 8px',
             transition: 'color 0.2s ease'
           },
-          props.active && {
+          active && {
             color: colors.accent,
             transition: 'color 0.2s ease'
           }
         ]}
-        data-value={props.value}
+        data-value={value}
       >
-        {props.children}
+        {children}
       </span>
     </div>
   )

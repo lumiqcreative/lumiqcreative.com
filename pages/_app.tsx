@@ -1,7 +1,8 @@
 import { Global, css } from '@emotion/core'
 import { colors } from 'theme'
+import { AppProps } from 'next/app'
 
-const App = ({ Component, pageProps }) => {
+function App ({ Component, pageProps }: AppProps) {
   return (
     <>
       <Global
