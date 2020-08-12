@@ -4,7 +4,7 @@ import Head from 'next/head'
 import Header from 'components/header'
 import Hero from 'components/hero'
 
-export default function Home () {
+export default function Home (): JSX.Element {
   return (
     <>
       <Head>

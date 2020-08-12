@@ -8,7 +8,7 @@ type Props = {
   works: Work[]
 }
 
-const FilterBar = ({ filterText, onFilterTextChange, works }: Props) => {
+const FilterBar = ({ filterText, onFilterTextChange, works }: Props): JSX.Element => {
   const items = [
     <Chip
       active={filterText === ''}

@@ -6,7 +6,7 @@ type Props = {
   children: React.ReactNode
 }
 
-const Button = ({ href, className, children }: Props) => {
+const Button = ({ href, className, children }: Props): JSX.Element => {
   return (
     <a
       css={{

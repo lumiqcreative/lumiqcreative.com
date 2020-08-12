@@ -4,7 +4,7 @@ import Container from 'components/container'
 import works from 'data/works'
 import WorkTable from './work-table'
 
-const FilterableWorkTable = () => {
+const FilterableWorkTable = (): JSX.Element => {
   const [filterText, updateFilterText] = useState<string>('')
   const handleFilterTextChange = (e: React.MouseEvent<HTMLElement>) => {
     updateFilterText((e.target as HTMLElement).getAttribute('data-value') || '')

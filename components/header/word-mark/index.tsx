@@ -1,6 +1,6 @@
 import { colors, media } from 'theme'
 
-const WordMark = () => {
+const WordMark = (): JSX.Element => {
   return (
     <svg
       css={{

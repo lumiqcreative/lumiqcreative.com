@@ -9,7 +9,7 @@ type Props = {
   meta: string
 }
 
-const WorkRow = ({ href, title, subtitle, meta }: Props) => {
+const WorkRow = ({ href, title, subtitle, meta }: Props): JSX.Element => {
   return (
     <a
       href={href}

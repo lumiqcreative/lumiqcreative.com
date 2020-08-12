@@ -2,7 +2,7 @@ import { Global, css } from '@emotion/core'
 import { colors } from 'theme'
 import { AppProps } from 'next/app'
 
-function App ({ Component, pageProps }: AppProps) {
+function App ({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
       <Global

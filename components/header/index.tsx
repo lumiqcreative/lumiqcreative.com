@@ -3,7 +3,7 @@ import Button from 'components/button'
 import WordMark from './word-mark'
 import { colors } from 'theme'
 
-const Header = () => {
+const Header = (): JSX.Element => {
   return (
     <header
       css={{

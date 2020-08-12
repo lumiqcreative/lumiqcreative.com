@@ -8,7 +8,7 @@ type Props = {
   filterText: string
 }
 
-const WorkTable = ({ works, filterText }: Props) => {
+const WorkTable = ({ works, filterText }: Props): JSX.Element => {
   const rows: React.ReactNode[] | null = []
   works.sort((a, b) => compareDesc(parseISO(a.published), parseISO(b.published)))
   works.forEach((work) => {

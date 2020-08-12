@@ -3,7 +3,7 @@ type Props = {
   children: React.ReactNode
 }
 
-const Body = ({ className, children }: Props) => {
+const Body = ({ className, children }: Props): JSX.Element => {
   return (
     <p
       className={className}

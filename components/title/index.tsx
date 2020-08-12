@@ -8,7 +8,7 @@ type Props = {
   className?: string
 }
 
-const Title = ({ as, variant, children, className }: Props) => {
+const Title = ({ as, variant, children, className }: Props): JSX.Element => {
   return jsx(
     as,
     {

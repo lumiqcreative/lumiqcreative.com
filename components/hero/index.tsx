@@ -2,7 +2,7 @@ import Container from 'components/container'
 import Title from 'components/title'
 import { colors, media } from 'theme'
 
-const Hero = () => {
+const Hero = (): JSX.Element => {
   return (
     <Container>
       <div

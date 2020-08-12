@@ -2,7 +2,7 @@ import Body from 'components/body'
 import Container from 'components/container'
 import { colors } from 'theme'
 
-const Footer = () => {
+const Footer = (): JSX.Element => {
   return (
     <footer>
       <Container>
