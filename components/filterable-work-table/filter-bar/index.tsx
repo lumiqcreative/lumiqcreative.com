@@ -22,7 +22,6 @@ const FilterBar = ({ filterText, onFilterTextChange, works }: Props) => {
     items.push(
       <Chip
         active={filterText === category}
-        css={{ margin: '8px 0 0 0', [media[0]]: { margin: '0 0 0 24px' } }}
         value={category}
         key={category}
         onClick={onFilterTextChange}
@@ -34,9 +33,11 @@ const FilterBar = ({ filterText, onFilterTextChange, works }: Props) => {
   return (
     <div
       css={{
-        display: 'flex',
+        display: 'grid',
+        gridColumnGap: 24,
+        gridRowGap: 8,
         flexDirection: 'column',
-        [media[0]]: { flexDirection: 'row' }
+        [media[0]]: { display: 'inline-grid', gridAutoFlow: 'column' }
       }}
     >
       {items}
