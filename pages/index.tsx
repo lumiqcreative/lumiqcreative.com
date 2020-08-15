@@ -1,34 +1,13 @@
 import FilterableWorkTable from 'components/filterable-work-table'
-import Footer from 'components/footer'
-import Head from 'next/head'
-import Header from 'components/header'
-import Hero from 'components/hero'
+import Page from 'components/page'
 
-export default function Home (): JSX.Element {
+const Home = (): JSX.Element => {
   return (
-    <>
-      <Head>
-        <title>Lumiq Creative</title>
-        <link rel="icon" href="https://raw.githubusercontent.com/lumiqcreative/brand/master/q-mark/q-mark-black.png" />
-        <meta
-          name="description"
-          content="I arrange shapes, command computers, and put together words."
-        />
-        <meta name="twitter:card" content="summary" />
-        <meta
-          property="og:image"
-          content="https://lumiqcreative.com/cover.png"
-        />
-        <meta property="og:title" content="Lumiq Creative" />
-        <meta
-          property="og:description"
-          content="I arrange shapes, command computers, and put together words."
-        />
-      </Head>
-      <Header />
-      <Hero />
+    <Page heroTitle='I ar&shy;range shapes, com&shy;mand com&shy;pu&shy;ters, and put
+    to&shy;ge&shy;ther words.' description='I arrange shapes, command computers, and put together words.' coverImage='https://lumiqcreative.com/cover.png'>
       <FilterableWorkTable />
-      <Footer />
-    </>
+    </Page>
   )
 }
+
+export default Home

@@ -2,7 +2,11 @@ import Container from 'components/container'
 import Title from 'components/title'
 import { colors, media } from 'theme'
 
-const Hero = (): JSX.Element => {
+type Props = {
+  title: string
+}
+
+const Hero = ({ title }: Props): JSX.Element => {
   return (
     <Container>
       <div
@@ -22,8 +26,7 @@ const Hero = (): JSX.Element => {
           as="h1"
           variant={1}
         >
-          I ar&shy;range shapes, com&shy;mand com&shy;pu&shy;ters, and put
-          to&shy;ge&shy;ther words.
+          {title}
         </Title>
       </div>
     </Container>
