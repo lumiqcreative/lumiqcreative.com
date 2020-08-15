@@ -20,7 +20,7 @@ function App ({ Component, pageProps }: AppProps): JSX.Element {
               fontFamily: '"Inter"',
               fontStyle: 'normal',
               fontWeight: 400,
-              src: "url('/fonts/inter-400.woff2')"
+              src: "url('https://content.lumiqcreative.com/fonts/inter-400.woff2')"
             }
           },
           {
@@ -28,7 +28,7 @@ function App ({ Component, pageProps }: AppProps): JSX.Element {
               fontFamily: '"Inter"',
               fontStyle: 'normal',
               fontWeight: 500,
-              src: "url('/fonts/inter-500.woff2')"
+              src: "url('https://content.lumiqcreative.com/fonts/inter-500.woff2')"
             }
           },
           {
@@ -36,7 +36,7 @@ function App ({ Component, pageProps }: AppProps): JSX.Element {
               fontFamily: '"Inter"',
               fontStyle: 'normal',
               fontWeight: 600,
-              src: "url('/fonts/inter-600.woff2')"
+              src: "url('https://content.lumiqcreative.com/fonts/inter-600.woff2')"
             }
           },
           {
