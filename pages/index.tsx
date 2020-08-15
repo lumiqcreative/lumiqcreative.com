@@ -9,7 +9,7 @@ export default function Home (): JSX.Element {
     <>
       <Head>
         <title>Lumiq Creative</title>
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="https://raw.githubusercontent.com/lumiqcreative/brand/master/q-mark/q-mark-black.png" />
         <meta
           name="description"
           content="I arrange shapes, command computers, and put together words."

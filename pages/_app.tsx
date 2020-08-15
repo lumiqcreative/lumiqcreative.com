@@ -12,7 +12,7 @@ function App ({ Component, pageProps }: AppProps): JSX.Element {
               fontFamily: "'Graphik'",
               fontStyle: 'normal',
               fontWeight: 600,
-              src: `url("${process.env.GRAPHIK_600_URL}")`
+              src: `url("${process.env.NEXT_PUBLIC_GRAPHIK_600_URL}")`
             }
           },
           {
