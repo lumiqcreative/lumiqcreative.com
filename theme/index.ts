@@ -3,7 +3,7 @@ const colors = {
   surface: 'hsl(0, 0%, 100%)',
   onSurface: 'hsl(0, 0%, 0%)',
   onSurfaceMedium: 'hsl(240, 16%, 64%)',
-  border: 'hsl(240, 16%, 88%)'
+  border: 'hsl(240, 16%, 92%)'
 }
 
 const breakpoints = [720, 1080]
