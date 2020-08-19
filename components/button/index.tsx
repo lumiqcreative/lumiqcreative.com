@@ -1,4 +1,5 @@
 import { colors } from 'theme'
+import OpacityChanger from 'utils/opacity-changer'
 
 type Props = {
   href: string
@@ -11,7 +12,7 @@ const Button = ({ href, className, children }: Props): JSX.Element => {
     <a
       css={{
         alignItems: 'center',
-        border: `1px solid ${colors.accent}`,
+        background: OpacityChanger(colors.accent, 0.12),
         borderRadius: 18,
         color: colors.accent,
         display: 'flex',
