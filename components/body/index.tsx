@@ -8,7 +8,7 @@ const Body = ({ className, children }: Props): JSX.Element => {
     <p
       className={className}
       css={{
-        fontFamily: '"Inter"',
+        fontFamily: '"Inter", "Helvetica Neue", "Helvetica", sans-serif',
         fontWeight: 400,
         margin: 0,
         fontSize: 15,
