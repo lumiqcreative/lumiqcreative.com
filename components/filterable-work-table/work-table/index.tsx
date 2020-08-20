@@ -1,6 +1,6 @@
 import WorkRow from '../work-row'
 import Work from 'types'
-import DateFormatter from 'utils/date-formatter'
+import formatDate from 'utils/format-date'
 import { parseISO, compareDesc } from 'date-fns'
 
 type Props = {
@@ -17,7 +17,7 @@ const WorkTable = ({ works, filterText }: Props): JSX.Element => {
         <WorkRow
           href={work.link}
           key={work.title}
-          meta={DateFormatter(work.published)}
+          meta={formatDate(work.published)}
           subtitle={work.summary}
           title={work.title}
         />

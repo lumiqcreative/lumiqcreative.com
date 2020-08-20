@@ -1,5 +1,5 @@
 import { colors } from 'theme'
-import OpacityChanger from 'utils/opacity-changer'
+import applyAlpha from 'utils/apply-alpha'
 
 type Props = {
   href: string
@@ -12,7 +12,7 @@ const Button = ({ href, className, children }: Props): JSX.Element => {
     <a
       css={{
         alignItems: 'center',
-        background: OpacityChanger(colors.accent, 0.12),
+        background: applyAlpha(colors.accent, 0.12),
         borderRadius: 18,
         color: colors.accent,
         display: 'flex',

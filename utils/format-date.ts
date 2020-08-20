@@ -1,8 +1,8 @@
 import { parseISO, format } from 'date-fns'
 
-const DateFormatter = (date: string): string => {
+const formatDate = (date: string): string => {
   const parsedDate = parseISO(date)
   return format(parsedDate, 'dd MMM, yyyy')
 }
 
-export default DateFormatter
+export default formatDate
