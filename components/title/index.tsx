@@ -21,6 +21,7 @@ const Title = ({ as, variant, children, className }: Props): JSX.Element => {
           fontSize: 40,
           letterSpacing: '-0.03em',
           fontWeight: 600,
+          lineHeight: '44px',
           [media[0]]: {
             fontSize: 44,
             lineHeight: '52px'

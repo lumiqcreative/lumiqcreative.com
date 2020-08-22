@@ -21,8 +21,7 @@ const WorkDetails = ({ title, summary, published }: Props): JSX.Element => (
           color: colors.onSurfaceMedium
         }}
       >
-        {' '}
-        – {published}
+        {' ' + published}
       </span>
     </Body>
   </>

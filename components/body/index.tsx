@@ -12,11 +12,10 @@ const Body = ({ className, children, size }: Props): JSX.Element => {
         {
           fontFamily: '"Inter", "Helvetica Neue", "Helvetica", sans-serif',
           fontWeight: 400,
-          margin: 0,
-          lineHeight: '20px'
+          margin: 0
         },
-        size === 'small' && { fontSize: 15 },
-        size === 'large' && { fontSize: 17 }
+        size === 'small' && { fontSize: 15, lineHeight: '20px' },
+        size === 'large' && { fontSize: 17, lineHeight: '24px' }
       ]}
     >
       {children}

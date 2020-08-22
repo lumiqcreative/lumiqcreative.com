@@ -24,7 +24,8 @@ const Gallery = ({ figures }: Props): JSX.Element => {
         css={{
           display: 'grid',
           gridTemplateColumns: 'repeat(4, 1fr)',
-          gridGap: '16px',
+          gridColumnGap: 16,
+          gridRowGap: 24,
           [media[0]]: { gridTemplateColumns: 'repeat(8, 1fr)' },
           [media[1]]: { gridTemplateColumns: 'repeat(12, 1fr)' }
         }}

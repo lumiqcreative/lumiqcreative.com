@@ -7,13 +7,13 @@ import FigureType from 'types/figure-type'
 
 type Props = {
   figures: FigureType[]
-  fields: string
+  summary: string
   title: string
 }
 
-const Work = ({ figures, fields, title }: Props): JSX.Element => {
+const Work = ({ figures, summary, title }: Props): JSX.Element => {
   return (
-    <Page titlePrefix={title} heroTitle={title} heroSubtitle={fields}>
+    <Page titlePrefix={title} heroTitle={title} heroSubtitle={summary}>
       <Gallery figures={figures || []}></Gallery>
     </Page>
   )
@@ -32,7 +32,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   return {
     props: {
       figures: workData.figures,
-      fields: workData.fields,
+      summary: workData.summary,
       title: workData.title
     }
   }

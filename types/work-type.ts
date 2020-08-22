@@ -4,7 +4,6 @@ type WorkType = {
   category: 'Stories' | 'Deliverables' | 'Resources'
   destination: 'internal' | 'external'
   figures?: FigureType[]
-  fields?: string
   link?: string
   published: string
   slug?: string
