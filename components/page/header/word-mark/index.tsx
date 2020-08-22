@@ -6,7 +6,7 @@ const WordMark = (): JSX.Element => {
       css={{
         fill: colors.onSurface,
         height: 24,
-        margin: 'auto 24px auto 0',
+        margin: 'auto 0',
         [media[0]]: { height: 28 }
       }}
       viewBox="0 0 3282 1100"

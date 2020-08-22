@@ -8,7 +8,13 @@ type Props = {
   children: React.ReactNode
 }
 
-const Chip = ({ className, value, active, onClick, children }: Props): JSX.Element => {
+const Chip = ({
+  className,
+  value,
+  active,
+  onClick,
+  children
+}: Props): JSX.Element => {
   return (
     <div
       css={{

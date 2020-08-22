@@ -16,7 +16,8 @@ const Title = ({ as, variant, children, className }: Props): JSX.Element => {
       css: [
         { margin: 0 },
         variant === 1 && {
-          fontFamily: '"Graphik", "Inter", "Helvetica Neue", "Helvetica", sans-serif',
+          fontFamily:
+            '"Graphik", "Inter", "Helvetica Neue", "Helvetica", sans-serif',
           fontSize: 40,
           letterSpacing: '-0.03em',
           fontWeight: 600,

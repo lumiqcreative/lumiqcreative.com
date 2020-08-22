@@ -1,14 +1,18 @@
 import Chip from 'components/chip'
 import { media } from 'theme'
-import Work from 'types'
+import WorkType from 'types/work-type'
 
 type Props = {
   filterText: string
   onFilterTextChange: (e: React.MouseEvent<HTMLElement>) => void
-  works: Work[]
+  works: WorkType[]
 }
 
-const FilterBar = ({ filterText, onFilterTextChange, works }: Props): JSX.Element => {
+const FilterBar = ({
+  filterText,
+  onFilterTextChange,
+  works
+}: Props): JSX.Element => {
   const items = [
     <Chip
       active={filterText === ''}
@@ -17,8 +21,8 @@ const FilterBar = ({ filterText, onFilterTextChange, works }: Props): JSX.Elemen
     >
       All Work
     </Chip>
-  ];
-  [...new Set(works.map((work) => work.category))].forEach((category) => {
+  ]
+  ;[...new Set(works.map((work) => work.category))].forEach((category) => {
     items.push(
       <Chip
         active={filterText === category}

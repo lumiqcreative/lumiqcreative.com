@@ -15,7 +15,10 @@ const Footer = (): JSX.Element => {
             alignItems: 'center'
           }}
         >
-          <Body css={{ color: colors.onSurface, margin: 'auto 0' }}>
+          <Body
+            size="small"
+            css={{ color: colors.onSurface, margin: 'auto 0' }}
+          >
             &copy; 2018–{new Date().getFullYear()} Lumiq Creative
           </Body>
         </div>

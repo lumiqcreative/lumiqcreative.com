@@ -1,12 +1,14 @@
 import Container from 'components/container'
 import Title from 'components/title'
 import { colors, media } from 'theme'
+import Body from 'components/body'
 
 type Props = {
   title: string
+  subtitle?: string
 }
 
-const Hero = ({ title }: Props): JSX.Element => {
+const Hero = ({ title, subtitle }: Props): JSX.Element => {
   return (
     <Container>
       <div
@@ -28,6 +30,9 @@ const Hero = ({ title }: Props): JSX.Element => {
         >
           {title}
         </Title>
+        <Body css={{ marginTop: 12, color: colors.onSurface }} size="large">
+          {subtitle}
+        </Body>
       </div>
     </Container>
   )

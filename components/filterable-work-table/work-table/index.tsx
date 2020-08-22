@@ -1,24 +1,24 @@
 import WorkRow from '../work-row'
-import Work from 'types'
+import WorkType from 'types/work-type'
 import formatDate from 'utils/format-date'
-import { parseISO, compareDesc } from 'date-fns'
 
 type Props = {
-  works: Work[]
+  works: WorkType[]
   filterText: string
 }
 
 const WorkTable = ({ works, filterText }: Props): JSX.Element => {
   const rows: React.ReactNode[] | null = []
-  works.sort((a, b) => compareDesc(parseISO(a.published), parseISO(b.published)))
   works.forEach((work) => {
     if (work.category === filterText || filterText === '') {
       rows.push(
         <WorkRow
-          href={work.link}
+          location={work.destination}
+          slug={work.slug || undefined}
+          link={work.link}
           key={work.title}
-          meta={formatDate(work.published)}
-          subtitle={work.summary}
+          published={formatDate(work.published)}
+          summary={work.summary}
           title={work.title}
         />
       )

@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import FilterBar from './filter-bar'
 import Container from 'components/container'
-import works from 'data/works'
 import WorkTable from './work-table'
+import getAllWorks from 'utils/get-all-works'
 
 const FilterableWorkTable = (): JSX.Element => {
   const [filterText, updateFilterText] = useState<string>('')
@@ -14,9 +14,9 @@ const FilterableWorkTable = (): JSX.Element => {
       <FilterBar
         filterText={filterText}
         onFilterTextChange={handleFilterTextChange}
-        works={works}
+        works={getAllWorks()}
       />
-      <WorkTable filterText={filterText} works={works} />
+      <WorkTable filterText={filterText} works={getAllWorks()} />
     </Container>
   )
 }
