@@ -10,6 +10,7 @@ type Props = {
   heroTitle: string
   titlePrefix?: string
   heroSubtitle?: string
+  heroMeta?: string
 }
 
 const Page = ({
@@ -18,7 +19,8 @@ const Page = ({
   description,
   heroTitle,
   titlePrefix,
-  heroSubtitle
+  heroSubtitle,
+  heroMeta
 }: Props): JSX.Element => {
   const title = titlePrefix
     ? `${titlePrefix} – Lumiq Creative`
@@ -49,7 +51,7 @@ const Page = ({
         />
       </Head>
       <Header />
-      <Hero title={heroTitle} subtitle={heroSubtitle} />
+      <Hero title={heroTitle} subtitle={heroSubtitle} meta={heroMeta} />
       {children}
       <Footer />
     </>

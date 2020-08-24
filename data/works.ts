@@ -4,9 +4,13 @@ const works: WorkType[] = [
   {
     title: 'Overdrop Blocks',
     category: 'Deliverables',
-    summary: 'Interface co-design for the cross-platform weather app.',
+    summary: 'Interface co-design for the cross-platform mobile weather app.',
     published: '2020-08-22',
     figures: [
+      {
+        image: 'https://content.lumiqcreative.com/img/overdrop-warnings.png',
+        caption: 'Weather warnings.'
+      },
       {
         image: 'https://content.lumiqcreative.com/img/overdrop-radar.png',
         caption: 'Radar scale & controls.'

@@ -15,7 +15,11 @@ const Body = ({ className, children, size }: Props): JSX.Element => {
           margin: 0
         },
         size === 'small' && { fontSize: 15, lineHeight: '20px' },
-        size === 'large' && { fontSize: 17, lineHeight: '24px' }
+        size === 'large' && {
+          fontSize: 20,
+          lineHeight: '26px',
+          letterSpacing: '-0.01em'
+        }
       ]}
     >
       {children}

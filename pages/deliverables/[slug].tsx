@@ -4,16 +4,23 @@ import getWorkData from 'utils/get-work-data'
 import getWorkSlugs from 'utils/get-work-slugs'
 import Page from 'components/page'
 import FigureType from 'types/figure-type'
+import formatDate from 'utils/format-date'
 
 type Props = {
   figures: FigureType[]
   summary: string
   title: string
+  published: string
 }
 
-const Work = ({ figures, summary, title }: Props): JSX.Element => {
+const Work = ({ figures, summary, title, published }: Props): JSX.Element => {
   return (
-    <Page titlePrefix={title} heroTitle={title} heroSubtitle={summary}>
+    <Page
+      titlePrefix={title}
+      heroTitle={title}
+      heroSubtitle={summary}
+      heroMeta={formatDate(published)}
+    >
       <Gallery figures={figures || []}></Gallery>
     </Page>
   )
@@ -33,6 +40,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     props: {
       figures: workData.figures,
       summary: workData.summary,
+      published: workData.published,
       title: workData.title
     }
   }

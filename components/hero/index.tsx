@@ -6,9 +6,10 @@ import Body from 'components/body'
 type Props = {
   title: string
   subtitle?: string
+  meta?: string
 }
 
-const Hero = ({ title, subtitle }: Props): JSX.Element => {
+const Hero = ({ title, subtitle, meta }: Props): JSX.Element => {
   return (
     <Container>
       <div
@@ -30,8 +31,14 @@ const Hero = ({ title, subtitle }: Props): JSX.Element => {
         >
           {title}
         </Title>
-        <Body css={{ marginTop: 12, color: colors.onSurface }} size="large">
+        <Body css={{ marginTop: 14, color: colors.onSurface }} size="large">
           {subtitle}
+        </Body>
+        <Body
+          css={{ marginTop: 14, color: colors.onSurfaceMedium }}
+          size="small"
+        >
+          {meta}
         </Body>
       </div>
     </Container>
