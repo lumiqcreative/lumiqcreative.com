@@ -1,4 +1,4 @@
-import Body from 'components/body'
+import Typography from 'components/typography'
 import Container from 'components/container'
 import { colors } from 'theme'
 
@@ -15,12 +15,14 @@ const Footer = (): JSX.Element => {
             alignItems: 'center'
           }}
         >
-          <Body
-            size="small"
+          <Typography
+            category="body"
+            variant={2}
+            as="p"
             css={{ color: colors.onSurface, margin: 'auto 0' }}
           >
             &copy; 2018–{new Date().getFullYear()} Lumiq Creative
-          </Body>
+          </Typography>
         </div>
       </Container>
     </footer>

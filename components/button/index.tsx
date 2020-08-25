@@ -1,4 +1,4 @@
-import { colors } from 'theme'
+import { colors, fonts } from 'theme'
 import applyAlpha from 'utils/apply-alpha'
 
 type Props = {
@@ -16,7 +16,7 @@ const Button = ({ href, className, children }: Props): JSX.Element => {
         borderRadius: 18,
         color: colors.accent,
         display: 'flex',
-        fontFamily: '"Inter"',
+        fontFamily: fonts.body,
         fontSize: 15,
         fontWeight: 500,
         height: 36,

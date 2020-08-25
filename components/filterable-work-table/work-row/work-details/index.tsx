@@ -1,6 +1,5 @@
 import { colors } from 'theme'
-import Body from 'components/body'
-import Title from 'components/title'
+import Typography from 'components/typography'
 
 type Props = {
   title: string
@@ -10,10 +9,20 @@ type Props = {
 
 const WorkDetails = ({ title, summary, published }: Props): JSX.Element => (
   <>
-    <Title as="h3" variant={3} css={{ color: colors.onSurface }}>
+    <Typography
+      as="h3"
+      category="title"
+      variant={2}
+      css={{ color: colors.onSurface }}
+    >
       {title}
-    </Title>
-    <Body size="small" css={{ marginTop: 8, color: colors.onSurface }}>
+    </Typography>
+    <Typography
+      category="body"
+      variant={2}
+      as="p"
+      css={{ marginTop: 8, color: colors.onSurface }}
+    >
       {summary}
       <span
         css={{
@@ -23,7 +32,7 @@ const WorkDetails = ({ title, summary, published }: Props): JSX.Element => (
       >
         {' ' + published}
       </span>
-    </Body>
+    </Typography>
   </>
 )
 

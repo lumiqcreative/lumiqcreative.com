@@ -1,5 +1,5 @@
 import FigureType from 'types/figure-type'
-import Body from 'components/body'
+import Typography from 'components/typography'
 import { colors, media } from 'theme'
 
 const Figure = ({ image, caption }: FigureType): JSX.Element => {
@@ -12,12 +12,24 @@ const Figure = ({ image, caption }: FigureType): JSX.Element => {
         '&:first-child': { gridColumn: '1/-1' }
       }}
     >
-      <picture css={{ background: colors.surfaceOverlay, height: 0, paddingBottom: '50%', display: 'block' }}>
-        <img src={image} css={{ width: '100%', display: 'flex' }}/>
+      <picture
+        css={{
+          background: colors.surfaceOverlay,
+          height: 0,
+          paddingBottom: '50%',
+          display: 'block'
+        }}
+      >
+        <img src={image} css={{ width: '100%', display: 'flex' }} />
       </picture>
-      <Body size="small" css={{ marginTop: 16 }}>
+      <Typography
+        as="figcaption"
+        category="body"
+        variant={2}
+        css={{ marginTop: 16 }}
+      >
         {caption}
-      </Body>
+      </Typography>
     </figure>
   )
 }

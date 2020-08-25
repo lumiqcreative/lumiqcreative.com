@@ -1,7 +1,6 @@
 import Container from 'components/container'
-import Title from 'components/title'
 import { colors, media } from 'theme'
-import Body from 'components/body'
+import Typography from 'components/typography'
 
 type Props = {
   title: string
@@ -18,7 +17,7 @@ const Hero = ({ title, subtitle, meta }: Props): JSX.Element => {
           [media[0]]: { padding: '128px 0 64px 0' }
         }}
       >
-        <Title
+        <Typography
           css={{
             color: colors.onSurface,
             hyphens: 'auto',
@@ -27,19 +26,27 @@ const Hero = ({ title, subtitle, meta }: Props): JSX.Element => {
             [media[1]]: { maxWidth: 620 }
           }}
           as="h1"
+          category="title"
           variant={1}
         >
           {title}
-        </Title>
-        <Body css={{ marginTop: 14, color: colors.onSurface }} size="large">
+        </Typography>
+        <Typography
+          css={{ marginTop: 14, color: colors.onSurface }}
+          category="body"
+          variant={1}
+          as="p"
+        >
           {subtitle}
-        </Body>
-        <Body
+        </Typography>
+        <Typography
           css={{ marginTop: 14, color: colors.onSurfaceMedium }}
-          size="small"
+          category="body"
+          variant={1}
+          as="p"
         >
           {meta}
-        </Body>
+        </Typography>
       </div>
     </Container>
   )

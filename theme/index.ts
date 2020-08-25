@@ -9,8 +9,13 @@ const colors = {
 
 const breakpoints = [720, 1080]
 
+const fonts = {
+  body: '"Inter", "Helvetica Neue", "Helvetica", sans-serif',
+  title: '"Graphik", "Helvetica Neue", "Helvetica", sans-serif'
+}
+
 const media = breakpoints.map(
   (breakpoint) => `@media (min-width: ${breakpoint}px)`
 )
 
-export { colors, media }
+export { fonts, colors, media }

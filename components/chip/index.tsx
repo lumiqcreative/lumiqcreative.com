@@ -1,4 +1,4 @@
-import { colors } from 'theme'
+import { colors, fonts } from 'theme'
 
 type Props = {
   className?: string
@@ -49,7 +49,7 @@ const Chip = ({
       <span
         css={[
           {
-            fontFamily: '"Inter"',
+            fontFamily: fonts.body,
             color: colors.onSurface,
             fontSize: 17,
             fontWeight: 500,
