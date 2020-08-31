@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import WorkDetails from './work-details'
-import { colors } from 'theme'
 import { css } from '@emotion/core'
 
 type Props = {
@@ -10,25 +9,23 @@ type Props = {
   summary: string
   title: string
   link?: string
+  cover: string
 }
 
 const styles = css({
+  gridColumn: 'span 4',
   display: 'block',
-  textDecoration: 'none',
-  padding: '24px 0',
-  borderTop: `1px solid ${colors.border}`,
-  '&:last-child': {
-    borderBottom: `1px solid ${colors.border}`
-  }
+  textDecoration: 'none'
 })
 
-const WorkRow = ({
+const WorkCell = ({
   location,
   published,
   slug,
   summary,
   title,
-  link
+  link,
+  cover
 }: Props): JSX.Element => {
   let element
   if (location === 'internal') {
@@ -39,18 +36,28 @@ const WorkRow = ({
         passHref={true}
       >
         <a css={styles}>
-          <WorkDetails title={title} summary={summary} published={published} />
+          <WorkDetails
+            cover={cover}
+            title={title}
+            summary={summary}
+            published={published}
+          />
         </a>
       </Link>
     )
   } else {
     element = (
       <a href={link} css={styles}>
-        <WorkDetails title={title} summary={summary} published={published} />
+        <WorkDetails
+          cover={cover}
+          title={title}
+          summary={summary}
+          published={published}
+        />
       </a>
     )
   }
   return element
 }
 
-export default WorkRow
+export default WorkCell

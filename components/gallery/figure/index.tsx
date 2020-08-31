@@ -16,8 +16,9 @@ const Figure = ({ image, caption }: FigureType): JSX.Element => {
         css={{
           background: colors.surfaceOverlay,
           height: 0,
-          paddingBottom: '50%',
-          display: 'block'
+          paddingBottom: (9 / 16) * 100 + '%',
+          display: 'block',
+          overflow: 'hidden'
         }}
       >
         <img src={image} css={{ width: '100%', display: 'flex' }} />

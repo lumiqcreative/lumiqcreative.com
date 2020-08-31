@@ -1,7 +1,7 @@
 import Container from 'components/container'
 import FigureType from 'types/figure-type'
 import Figure from './figure'
-import { media } from 'theme'
+import Grid from 'components/grid'
 
 type Props = {
   figures: FigureType[]
@@ -20,18 +20,7 @@ const Gallery = ({ figures }: Props): JSX.Element => {
   })
   return (
     <Container>
-      <div
-        css={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(4, 1fr)',
-          gridColumnGap: 16,
-          gridRowGap: 32,
-          [media[0]]: { gridTemplateColumns: 'repeat(8, 1fr)' },
-          [media[1]]: { gridTemplateColumns: 'repeat(12, 1fr)' }
-        }}
-      >
-        {cells}
-      </div>
+      <Grid rowGap="sm">{cells}</Grid>
     </Container>
   )
 }

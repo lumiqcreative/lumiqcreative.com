@@ -9,6 +9,7 @@ type WorkType = {
   slug?: string
   summary: string
   title: string
+  cover: string
 }
 
 export default WorkType

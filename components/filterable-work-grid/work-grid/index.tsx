@@ -1,18 +1,20 @@
-import WorkRow from '../work-row'
+import WorkCell from './work-cell'
 import WorkType from 'types/work-type'
 import formatDate from 'utils/format-date'
+import Grid from 'components/grid'
 
 type Props = {
   works: WorkType[]
   filterText: string
 }
 
-const WorkTable = ({ works, filterText }: Props): JSX.Element => {
-  const rows: React.ReactNode[] | null = []
+const WorkGrid = ({ works, filterText }: Props): JSX.Element => {
+  const cells: React.ReactNode[] | null = []
   works.forEach((work) => {
     if (work.category === filterText || filterText === '') {
-      rows.push(
-        <WorkRow
+      cells.push(
+        <WorkCell
+          cover={work.cover}
           location={work.destination}
           slug={work.slug || undefined}
           link={work.link}
@@ -24,7 +26,11 @@ const WorkTable = ({ works, filterText }: Props): JSX.Element => {
       )
     }
   })
-  return <div css={{ marginTop: 24 }}>{rows}</div>
+  return (
+    <Grid rowGap="lg" css={{ marginTop: 24 }}>
+      {cells}
+    </Grid>
+  )
 }
 
-export default WorkTable
+export default WorkGrid

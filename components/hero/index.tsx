@@ -23,7 +23,7 @@ const Hero = ({ title, subtitle, meta }: Props): JSX.Element => {
             hyphens: 'auto',
             maxWidth: 460,
             [media[0]]: { hyphens: 'none', maxWidth: 500 },
-            [media[1]]: { maxWidth: 620 }
+            [media[1]]: { maxWidth: 660 }
           }}
           as="h1"
           category="title"
