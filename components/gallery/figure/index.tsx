@@ -9,7 +9,7 @@ const Figure = ({ image, caption }: FigureType): JSX.Element => {
         gridColumn: 'span 4',
         margin: 0,
         [media[1]]: { gridColumn: 'span 6' },
-        '&:first-child': { gridColumn: '1/-1' }
+        '&:first-of-type': { gridColumn: '1/-1' }
       }}
     >
       <picture
