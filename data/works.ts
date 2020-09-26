@@ -9,16 +9,16 @@ const works: WorkType[] = [
     published: '2020-08-22',
     figures: [
       {
+        image: 'https://content.lumiqcreative.com/img/overdrop-places.png',
+        caption: 'Place manager.'
+      },
+      {
         image: 'https://content.lumiqcreative.com/img/overdrop-warnings.png',
         caption: 'Weather warnings.'
       },
       {
         image: 'https://content.lumiqcreative.com/img/overdrop-radar.png',
         caption: 'Radar scale & controls.'
-      },
-      {
-        image: 'https://content.lumiqcreative.com/img/overdrop-settings.png',
-        caption: 'App settings.'
       }
     ],
     destination: 'internal',
