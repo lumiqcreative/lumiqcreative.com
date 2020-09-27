@@ -11,6 +11,7 @@ type Props = {
   titlePrefix?: string
   heroSubtitle?: string
   heroMeta?: string
+  largeSocialImage?: boolean
 }
 
 const Page = ({
@@ -20,7 +21,8 @@ const Page = ({
   heroTitle,
   titlePrefix,
   heroSubtitle,
-  heroMeta
+  heroMeta,
+  largeSocialImage
 }: Props): JSX.Element => {
   const title = titlePrefix
     ? `${titlePrefix} – Lumiq Creative`
@@ -34,7 +36,10 @@ const Page = ({
           href="https://raw.githubusercontent.com/lumiqcreative/brand/master/q-mark/q-mark-black.png"
         />
         <meta name="description" content={description} />
-        <meta name="twitter:card" content="summary" />
+        <meta
+          name="twitter:card"
+          content={largeSocialImage ? 'summary_large_image' : 'summary'}
+        />
         <meta
           property="og:image"
           content={

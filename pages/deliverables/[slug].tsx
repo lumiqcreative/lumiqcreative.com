@@ -11,15 +11,25 @@ type Props = {
   summary: string
   title: string
   published: string
+  cover: string
 }
 
-const Work = ({ figures, summary, title, published }: Props): JSX.Element => {
+const Work = ({
+  figures,
+  summary,
+  title,
+  published,
+  cover
+}: Props): JSX.Element => {
   return (
     <Page
       titlePrefix={title}
       heroTitle={title}
       heroSubtitle={summary}
       heroMeta={formatDate(published)}
+      coverImage={cover}
+      description={summary}
+      largeSocialImage={true}
     >
       <Gallery figures={figures || []}></Gallery>
     </Page>
@@ -41,7 +51,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       figures: workData.figures,
       summary: workData.summary,
       published: workData.published,
-      title: workData.title
+      title: workData.title,
+      cover: workData.cover
     }
   }
 }
