@@ -10,6 +10,7 @@ type WorkType = {
   summary: string
   title: string
   cover: string
+  socialImage?: string
 }
 
 export default WorkType

@@ -11,7 +11,7 @@ type Props = {
   summary: string
   title: string
   published: string
-  cover: string
+  socialImage: string
 }
 
 const Work = ({
@@ -19,7 +19,7 @@ const Work = ({
   summary,
   title,
   published,
-  cover
+  socialImage
 }: Props): JSX.Element => {
   return (
     <Page
@@ -27,7 +27,7 @@ const Work = ({
       heroTitle={title}
       heroSubtitle={summary}
       heroMeta={formatDate(published)}
-      coverImage={cover}
+      socialImage={socialImage}
       description={summary}
       largeSocialImage={true}
     >
@@ -52,7 +52,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       summary: workData.summary,
       published: workData.published,
       title: workData.title,
-      cover: workData.cover
+      socialImage: workData.socialImage
     }
   }
 }

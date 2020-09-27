@@ -23,7 +23,9 @@ const works: WorkType[] = [
     ],
     destination: 'internal',
     slug: 'overdrop-blocks',
-    cover: 'https://content.lumiqcreative.com/img/overdrop-blocks.png'
+    cover: 'https://content.lumiqcreative.com/img/overdrop-blocks.png',
+    socialImage:
+      'https://content.lumiqcreative.com/img/overdrop-blocks-social.png'
   },
   {
     title: 'Lawnfeed Page',

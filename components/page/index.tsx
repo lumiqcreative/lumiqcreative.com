@@ -5,7 +5,7 @@ import Footer from './footer'
 
 type Props = {
   children: React.ReactNode
-  coverImage?: string
+  socialImage?: string
   description?: string
   heroTitle: string
   titlePrefix?: string
@@ -16,7 +16,7 @@ type Props = {
 
 const Page = ({
   children,
-  coverImage,
+  socialImage,
   description,
   heroTitle,
   titlePrefix,
@@ -43,7 +43,7 @@ const Page = ({
         <meta
           property="og:image"
           content={
-            coverImage || 'https://content.lumiqcreative.com/img/cover.png'
+            socialImage || 'https://content.lumiqcreative.com/img/cover.png'
           }
         />
         <meta property="og:title" content={title} />
