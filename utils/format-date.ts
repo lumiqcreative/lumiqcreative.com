@@ -1,8 +1,9 @@
-import { format, parseISO } from 'date-fns'
-
 const formatDate = (date: string): string => {
-  const parsedDate = parseISO(date)
-  const formattedDate = format(parsedDate, 'MMMM d, yyyy')
+  const parsedDate = new Date(date)
+  const formattedMonth = Intl.DateTimeFormat('en-UK', { month: 'long' }).format(parsedDate)
+  const formattedDay = Intl.DateTimeFormat('en-UK', { day: 'numeric' }).format(parsedDate)
+  const formattedYear = Intl.DateTimeFormat('en-UK', { year: 'numeric' }).format(parsedDate)
+  const formattedDate = `${formattedMonth} ${formattedDay}, ${formattedYear}`
   return formattedDate
 }
 
