@@ -31,22 +31,26 @@ const Hero = ({ title, subtitle, meta }: Props): JSX.Element => {
         >
           {title}
         </Typography>
-        <Typography
-          css={{ marginTop: 14, color: colors.onSurface }}
-          category="body"
-          variant={1}
-          as="p"
-        >
-          {subtitle}
-        </Typography>
-        <Typography
-          css={{ marginTop: 14, color: colors.onSurfaceMedium }}
-          category="body"
-          variant={1}
-          as="p"
-        >
-          {meta}
-        </Typography>
+        { subtitle &&
+          <Typography
+            css={{ marginTop: 14, color: colors.onSurface }}
+            category="body"
+            variant={1}
+            as="p"
+          >
+            {subtitle}
+          </Typography>
+        }
+        { meta &&
+          <Typography
+            css={{ marginTop: 14, color: colors.onSurfaceMedium }}
+            category="body"
+            variant={1}
+            as="p"
+          >
+            {meta}
+          </Typography>
+        }
       </div>
     </Container>
   )

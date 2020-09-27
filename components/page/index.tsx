@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Header from './header'
-import Hero from 'components/hero'
+import Hero from './hero'
 import Footer from './footer'
 
 type Props = {
