@@ -6,7 +6,9 @@ const deviceWireframes = () => {
       titlePrefix="Device Wireframes"
       redirect="https://github.com/lumiqcreative/device-wireframes"
       socialImage="https://content.lumiqcreative.com/img/frames-social"
+      description="Inch-perfect wireframes for custom device mock-ups."
       blank
+      largeSocialImage
     />
   )
 }
