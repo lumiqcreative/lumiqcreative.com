@@ -2,13 +2,13 @@ import WorkType from 'types/work-type'
 
 const works: WorkType[] = [
   {
-    title: 'Device Wireframes',
+    title: 'Device Frames',
     category: 'Resources',
-    summary: 'Inch-perfect wireframes for custom device mock-ups.',
+    summary: 'Inch-perfect device frames built for customisation.',
     published: '2020-10-14',
     destination: 'external',
     cover: 'https://content.lumiqcreative.com/img/frames.png',
-    link: 'https://github.com/lumiqcreative/device-wireframes'
+    link: 'https://github.com/lumiqcreative/device-frames'
   },
   {
     title: 'Overdrop Blocks',
