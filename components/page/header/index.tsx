@@ -31,6 +31,7 @@ const Header = (): JSX.Element => {
           <Button
             css={{ margin: 'auto 0 auto auto' }}
             href="mailto:contact@lumiqcreative.com"
+            destination="external"
           >
             Get in Touch
           </Button>
