@@ -4,14 +4,16 @@ import Hero from './hero'
 import Footer from './footer'
 
 type Props = {
-  children: React.ReactNode
+  children?: React.ReactNode
   socialImage?: string
   description?: string
-  heroTitle: string
+  heroTitle?: string
   titlePrefix?: string
   heroSubtitle?: string
   heroMeta?: string
   largeSocialImage?: boolean
+  blank?: boolean
+  redirect?: string
 }
 
 const Page = ({
@@ -22,7 +24,9 @@ const Page = ({
   titlePrefix,
   heroSubtitle,
   heroMeta,
-  largeSocialImage
+  largeSocialImage,
+  blank,
+  redirect
 }: Props): JSX.Element => {
   const title = titlePrefix
     ? `${titlePrefix} – Lumiq Creative`
@@ -54,11 +58,20 @@ const Page = ({
             'I arrange shapes, command computers, and put together words.'
           }
         />
+        {redirect && <meta httpEquiv="refresh" content={`0, ${redirect}`} />}
       </Head>
-      <Header />
-      <Hero title={heroTitle} subtitle={heroSubtitle} meta={heroMeta} />
+      {blank != true && (
+        <>
+          <Header />
+          <Hero
+            title={heroTitle || ''}
+            subtitle={heroSubtitle}
+            meta={heroMeta}
+          />
+        </>
+      )}
       {children}
-      <Footer />
+      {blank != true && <Footer />}
     </>
   )
 }
