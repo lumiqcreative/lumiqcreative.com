@@ -6,7 +6,7 @@ const deviceFrames = () => {
       titlePrefix="Device Frames"
       redirect="https://github.com/lumiqcreative/device-frames"
       socialImage="https://content.lumiqcreative.com/img/frames-social.png"
-      description="Inch-perfect device frames built for customisation."
+      description="Inch-perfect device frames ready for customisation."
       blank
       largeSocialImage
     />

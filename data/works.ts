@@ -4,7 +4,7 @@ const works: WorkType[] = [
   {
     title: 'Device Frames',
     category: 'Resources',
-    summary: 'Inch-perfect device frames built for customisation.',
+    summary: 'Inch-perfect device frames ready for customisation.',
     published: '2020-10-14',
     destination: 'external',
     cover: 'https://content.lumiqcreative.com/img/frames.png',
