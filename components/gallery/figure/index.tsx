@@ -1,6 +1,7 @@
 import FigureType from 'types/figure-type'
 import Typography from 'components/typography'
 import { colors, media } from 'theme'
+import Image from 'next/image'
 
 const Figure = ({ image, caption }: FigureType): JSX.Element => {
   return (
@@ -12,17 +13,12 @@ const Figure = ({ image, caption }: FigureType): JSX.Element => {
         '&:first-of-type': { gridColumn: '1/-1' }
       }}
     >
-      <picture
-        css={{
-          background: colors.surfaceOverlay,
-          height: 0,
-          paddingBottom: (9 / 16) * 100 + '%',
-          display: 'block',
-          overflow: 'hidden'
-        }}
-      >
-        <img src={image} css={{ width: '100%', display: 'flex' }} />
-      </picture>
+      <Image
+        width={1920}
+        height={1080}
+        src={image}
+        css={{ background: colors.surfaceOverlay }}
+      />
       <Typography
         as="figcaption"
         category="body"

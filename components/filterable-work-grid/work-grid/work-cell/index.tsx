@@ -30,11 +30,7 @@ const WorkCell = ({
   let element
   if (location === 'internal') {
     element = (
-      <Link
-        href="/deliverables/[slug]"
-        as={'/deliverables/' + slug}
-        passHref={true}
-      >
+      <Link href={`/deliverables/${slug}`} passHref={true}>
         <a css={styles}>
           <WorkDetails
             cover={cover}

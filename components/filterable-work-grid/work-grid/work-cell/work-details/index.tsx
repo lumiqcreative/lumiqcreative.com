@@ -1,5 +1,6 @@
 import { colors } from 'theme'
 import Typography from 'components/typography'
+import Image from 'next/image'
 
 type Props = {
   title: string
@@ -15,16 +16,12 @@ const WorkDetails = ({
   cover
 }: Props): JSX.Element => (
   <>
-    <picture
-      css={{
-        background: colors.surfaceOverlay,
-        height: 0,
-        paddingBottom: `${(9 / 16) * 100}%`,
-        display: 'block'
-      }}
-    >
-      <img css={{ width: '100%' }} src={cover} />
-    </picture>
+    <Image
+      src={cover}
+      width={1920}
+      height={1080}
+      css={{ background: colors.surfaceOverlay }}
+    />
     <Typography
       as="h3"
       category="title"
