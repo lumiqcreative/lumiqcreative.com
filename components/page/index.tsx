@@ -2,9 +2,10 @@ import Head from 'next/head'
 import Header from './header'
 import Hero from './hero'
 import Footer from './footer'
+import { ReactNode } from 'react'
 
 type Props = {
-  children?: React.ReactNode
+  children?: ReactNode
   socialImage?: string
   description?: string
   heroTitle?: string

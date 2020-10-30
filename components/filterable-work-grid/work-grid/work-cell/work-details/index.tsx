@@ -19,7 +19,7 @@ const WorkDetails = ({
       css={{
         background: colors.surfaceOverlay,
         height: 0,
-        paddingBottom: (9 / 16) * 100 + '%',
+        paddingBottom: `${(9 / 16) * 100}%`,
         display: 'block'
       }}
     >
