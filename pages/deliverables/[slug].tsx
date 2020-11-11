@@ -1,60 +1,60 @@
-import { GetStaticProps, GetStaticPaths } from 'next'
+import { WorkType } from 'types'
+import Layout from 'components/layout'
 import Gallery from 'components/gallery'
-import getWorkData from 'utils/get-work-data'
-import getWorkSlugs from 'utils/get-work-slugs'
-import Page from 'components/page'
-import FigureType from 'types/figure-type'
-import formatDate from 'utils/format-date'
+import { getAutoGallerySlugs, getAutoGalleryWork } from 'tools/works'
+import formatDate from 'tools/format-date'
 
 type Props = {
-  figures: FigureType[]
-  summary: string
-  title: string
-  published: string
-  socialImage: string
+  work: WorkType
 }
 
-const Work = ({
-  figures,
-  summary,
-  title,
-  published,
-  socialImage
-}: Props): JSX.Element => {
-  return (
-    <Page
-      titlePrefix={title}
-      heroTitle={title}
-      heroSubtitle={summary}
-      heroMeta={formatDate(published)}
-      socialImage={socialImage}
-      description={summary}
-      largeSocialImage={true}
-    >
-      <Gallery figures={figures || []}></Gallery>
-    </Page>
-  )
-}
+const Work = ({ work }: Props) => (
+  <Layout
+    title={work.title}
+    heroTitle={work.title}
+    heroSubtitle={work.summary}
+    heroDetail={formatDate(work.datePublished)}
+    cover={work.socialCover}
+  >
+    <Gallery
+      figures={
+        (work.where === 'local' &&
+          work.pageKind === 'auto-gallery' &&
+          work.figures) ||
+        []
+      }
+    />
+  </Layout>
+)
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  const workSlugs = getWorkSlugs()
+const getStaticPaths = async () => {
+  const slugs = getAutoGallerySlugs()
   return {
-    paths: workSlugs,
+    paths: slugs.map(slug => {
+      return {
+        params: {
+          slug: slug
+        }
+      }
+    }),
     fallback: false
   }
 }
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const workData = await getWorkData(params ? (params.slug as string) : '')
+type Params = {
+  params: {
+    slug: string
+  }
+}
+
+const getStaticProps = async ({ params }: Params) => {
+  const work = getAutoGalleryWork(params.slug)
   return {
     props: {
-      figures: workData.figures,
-      summary: workData.summary,
-      published: workData.published,
-      title: workData.title,
-      socialImage: workData.socialImage
+      work: work
     }
   }
 }
 
+export { getStaticPaths, getStaticProps }
 export default Work

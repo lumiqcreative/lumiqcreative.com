@@ -1,29 +1,28 @@
 import Button from 'components/button'
-import Typography from 'components/typography'
-import Page from 'components/page'
+import Layout from 'components/layout'
+import Text from 'components/text'
+import Link from 'next/link'
 
-const notFound = () => {
-  return (
-    <Page titlePrefix="Page Not Found" blank>
-      <div
-        css={{
-          display: 'flex',
-          alignItems: 'center',
-          width: '100%',
-          minHeight: '100vh',
-          justifyContent: 'center',
-          flexDirection: 'column'
-        }}
-      >
-        <Typography as="h1" category="title" variant={1}>
-          Page Not Found
-        </Typography>
-        <Button destination="internal" href="/" css={{ marginTop: 20 }}>
-          Go Back Home
-        </Button>
-      </div>
-    </Page>
-  )
-}
+const PageNotFound = (): JSX.Element => (
+  <Layout title='Page Not Found' blank>
+    <div
+      css={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column',
+        width: '100%',
+        minHeight: '100vh'
+      }}
+    >
+      <Text as='h1' style='title1'>
+        Page Not Found
+      </Text>
+      <Link href='/' passHref>
+        <Button css={{ marginTop: 20 }}>Go Back Home</Button>
+      </Link>
+    </div>
+  </Layout>
+)
 
-export default notFound
+export default PageNotFound
