@@ -22,6 +22,7 @@ const GalleryFigure = ({ caption, image }: Props): JSX.Element => (
       height={1080}
       src={image}
       css={{ background: colors.surface.secondary }}
+      alt={caption}
     />
     <Text as='figcaption' style='body2' css={{ marginTop: 16 }}>
       {caption}

@@ -37,6 +37,7 @@ const WorkCell = forwardRef<HTMLAnchorElement, Props>(
         height='1080'
         src={cover}
         width='1920'
+        alt={title}
       />
       <Text
         as='h2'
