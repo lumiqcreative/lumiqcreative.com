@@ -13,8 +13,8 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element => (
           src: `url('${process.env.NEXT_PUBLIC_GRAPHIK_600_URL}')`
         },
         body: {
-          margin: 0,
           background: colors.surface.primary,
+          margin: 0,
           textRendering: 'optimizeLegibility'
         },
         '*': {

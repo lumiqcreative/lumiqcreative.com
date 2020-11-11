@@ -5,7 +5,7 @@ type Props = {
   className?: string
 }
 
-const Container = ({ children, className = '' }: Props) => {
+const Container = ({ children, className = '' }: Props): JSX.Element => {
   const padding = 20
 
   return (

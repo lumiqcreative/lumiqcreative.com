@@ -7,7 +7,7 @@ type Props = {
   image: string
 }
 
-const GalleryFigure = ({ caption, image }: Props) => (
+const GalleryFigure = ({ caption, image }: Props): JSX.Element => (
   <figure
     css={{
       gridColumn: 'span 4',

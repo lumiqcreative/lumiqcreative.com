@@ -2,7 +2,7 @@ import { colors } from 'theme'
 import { forwardRef } from 'react'
 import Image from 'next/image'
 import Text from 'components/text'
-import formatDate from 'tools/format-date'
+import formatDate from 'utils/format-date'
 
 type Props = {
   cover: string
@@ -24,7 +24,7 @@ const WorkCell = forwardRef<HTMLAnchorElement, Props>(
       title
     }: Props,
     ref
-  ) => (
+  ): JSX.Element => (
     <a
       css={{ gridColumn: 'span 4', display: 'block', textDecoration: 'none' }}
       href={href}

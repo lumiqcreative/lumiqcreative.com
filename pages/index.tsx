@@ -1,4 +1,4 @@
-import { getWorks } from 'tools/works'
+import { getWorks } from 'utils/works'
 import { useState, MouseEvent } from 'react'
 import { WorkType } from 'types'
 import Container from 'components/container'

@@ -8,7 +8,7 @@ type Props = {
   onClick: (e: MouseEvent<HTMLElement>) => void
 }
 
-const Tag = ({ active, children, data, onClick }: Props) => (
+const Tag = ({ active, children, data, onClick }: Props): JSX.Element => (
   <div
     css={{
       alignItems: 'center',

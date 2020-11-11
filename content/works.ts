@@ -1,5 +1,5 @@
 import { WorkType } from 'types'
-import getRemoteFileUrl from 'tools/get-remote-file-url'
+import getRemoteFileUrl from 'utils/get-remote-file-url'
 
 const works: WorkType[] = [
   {

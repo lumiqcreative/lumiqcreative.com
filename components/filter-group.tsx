@@ -9,7 +9,11 @@ type Props = {
   works: WorkType[]
 }
 
-const FilterGroup = ({ filterText, onFilterTextChange, works }: Props) => {
+const FilterGroup = ({
+  filterText,
+  onFilterTextChange,
+  works
+}: Props): JSX.Element => {
   const tags = [
     <Tag
       active={filterText === ''}

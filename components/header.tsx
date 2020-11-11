@@ -4,7 +4,7 @@ import Container from 'components/container'
 import Link from 'next/link'
 import Logo from 'components/logo'
 
-const Header = () => (
+const Header = (): JSX.Element => (
   <div
     css={{
       background: colors.surface.primary,

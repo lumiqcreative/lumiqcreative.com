@@ -1,8 +1,8 @@
+import { getAutoGallerySlugs, getAutoGalleryWork } from 'utils/works'
 import { WorkType } from 'types'
-import Layout from 'components/layout'
+import formatDate from 'utils/format-date'
 import Gallery from 'components/gallery'
-import { getAutoGallerySlugs, getAutoGalleryWork } from 'tools/works'
-import formatDate from 'tools/format-date'
+import Layout from 'components/layout'
 
 type Props = {
   work: WorkType

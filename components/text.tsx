@@ -9,7 +9,7 @@ type Props = {
   style: `title${1 | 2}` | 'subtitle' | `body${1 | 2}`
 }
 
-const Text = ({ as, children, style, className }: Props) => {
+const Text = ({ as, children, style, className }: Props): JSX.Element => {
   const Root = as
   let styles: SerializedStyles
 

@@ -1,6 +1,6 @@
 import { colors, textStyles } from 'theme'
 import { forwardRef, ReactNode } from 'react'
-import applyAlpha from 'tools/apply-alpha'
+import applyAlpha from 'utils/apply-alpha'
 
 type Props = {
   children: ReactNode
@@ -13,7 +13,7 @@ const Button = forwardRef<HTMLAnchorElement, Props>(
   (
     { children, className = '', href = '', onClick = () => null }: Props,
     ref
-  ) => {
+  ): JSX.Element => {
     return (
       <a
         className={className}

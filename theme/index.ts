@@ -1,4 +1,4 @@
-import makeTextStyle from 'tools/make-text-style'
+import makeTextStyle from 'utils/make-text-style'
 import { css } from '@emotion/core'
 
 const colors = {

@@ -17,7 +17,7 @@ type Props = {
       blank: true
       heroTitle?: string
     }
-  | { blank?: false | undefined; heroTitle: string }
+  | { blank?: false; heroTitle: string }
 )
 
 const Layout = ({
@@ -29,7 +29,7 @@ const Layout = ({
   heroTitle,
   title = '',
   cover = ''
-}: Props) => (
+}: Props): JSX.Element => (
   <>
     <Head>
       <title>{title ? `${title} – Lumiq Creative` : 'Lumiq Creative'}</title>
