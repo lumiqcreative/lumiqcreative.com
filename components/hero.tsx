@@ -1,6 +1,7 @@
 import { media, colors } from 'theme'
 import Container from 'components/container'
 import Text from 'components/text'
+import { ReactNode } from 'react'
 
 type Props = {
   detail?: ReactNode
