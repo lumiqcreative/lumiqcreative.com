@@ -3,7 +3,7 @@ import Container from 'components/container'
 import Text from 'components/text'
 
 type Props = {
-  detail?: string
+  detail?: ReactNode
   title: string
   subtitle?: string
 }

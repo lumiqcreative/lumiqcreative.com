@@ -27,7 +27,7 @@ const Work = ({ work }: Props) => (
   </Layout>
 )
 
-const getStaticPaths = async () => {
+const getStaticPaths = () => {
   const slugs = getAutoGallerySlugs()
   return {
     paths: slugs.map(slug => {
@@ -47,7 +47,7 @@ type Params = {
   }
 }
 
-const getStaticProps = async ({ params }: Params) => {
+const getStaticProps = ({ params }: Params) => {
   const work = getAutoGalleryWork(params.slug)
   return {
     props: {

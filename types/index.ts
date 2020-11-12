@@ -13,9 +13,16 @@ type WorkType = {
 } & (
   | ({ where: 'local' } & (
       | { pageKind: 'auto-gallery'; figures: GalleryFigureType[]; slug: string }
-      | { pageKind: 'prebuilt'; href: string }
+      | { pageKind: 'prebuilt'; slug: string }
     ))
   | { where: 'remote'; href: string }
 )
 
-export type { WorkType, GalleryFigureType }
+type DeviceFrameType = {
+  datePublished: string
+  deviceName: string
+  href: string
+  pathData: string
+}
+
+export type { WorkType, GalleryFigureType, DeviceFrameType }

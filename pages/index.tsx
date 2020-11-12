@@ -30,7 +30,7 @@ const Home = ({ works }: Props): JSX.Element => {
   )
 }
 
-const getStaticProps = async () => {
+const getStaticProps = () => {
   const works = getWorks()
   return {
     props: {

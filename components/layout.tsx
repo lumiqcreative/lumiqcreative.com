@@ -10,7 +10,7 @@ type Props = {
   description?: string
   title?: string
   heroSubtitle?: string
-  heroDetail?: string
+  heroDetail?: ReactNode
   cover?: string
 } & (
   | {
@@ -26,7 +26,7 @@ const Layout = ({
   description = 'I arrage shapes, command computers, and put together words.',
   heroDetail,
   heroSubtitle = '',
-  heroTitle,
+  heroTitle = '',
   title = '',
   cover = ''
 }: Props): JSX.Element => (
@@ -71,11 +71,7 @@ const Layout = ({
     {!blank && (
       <>
         <Header />
-        <Hero
-          detail={heroDetail}
-          title={heroTitle || ''}
-          subtitle={heroSubtitle}
-        />
+        <Hero detail={heroDetail} title={heroTitle} subtitle={heroSubtitle} />
       </>
     )}
     {children}

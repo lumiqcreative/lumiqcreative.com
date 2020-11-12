@@ -17,11 +17,7 @@ const WorkGrid = ({ filterText, works }: Props): JSX.Element => {
       if (work.where === 'local') {
         cells.push(
           <Link
-            href={
-              work.pageKind === 'auto-gallery'
-                ? `/deliverables/${work.slug}`
-                : work.href
-            }
+            href={`${work.category.toLowerCase()}/${work.slug}`}
             key={work.title}
             passHref
           >

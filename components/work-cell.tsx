@@ -32,12 +32,12 @@ const WorkCell = forwardRef<HTMLAnchorElement, Props>(
       ref={ref}
     >
       <Image
-        layout='responsive'
+        alt={title}
         css={{ background: colors.surface.secondary }}
         height='1080'
+        layout='responsive'
         src={cover}
         width='1920'
-        alt={title}
       />
       <Text
         as='h2'

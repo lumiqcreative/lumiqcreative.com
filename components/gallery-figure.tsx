@@ -17,12 +17,12 @@ const GalleryFigure = ({ caption, image }: Props): JSX.Element => (
     }}
   >
     <Image
-      layout='responsive'
-      width={1920}
-      height={1080}
-      src={image}
-      css={{ background: colors.surface.secondary }}
       alt={caption}
+      css={{ background: colors.surface.secondary }}
+      height={1080}
+      layout='responsive'
+      src={image}
+      width={1920}
     />
     <Text as='figcaption' style='body2' css={{ marginTop: 16 }}>
       {caption}

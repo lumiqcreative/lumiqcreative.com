@@ -6,7 +6,9 @@ const makeTextStyle = (fontFamily: 1 | 2, rules: SerializedStyles) =>
       margin: 0,
       display: 'block',
       fontFamily:
-        fontFamily === 1 ? '"Graphik", sans-serif' : '"Inter", sans-serif'
+        fontFamily === 1
+          ? '"Graphik", "Inter", sans-serif'
+          : '"Inter", sans-serif'
     },
     rules
   )

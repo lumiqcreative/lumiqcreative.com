@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import { textStyles } from 'theme'
+import { colors, textStyles } from 'theme'
 import { SerializedStyles } from '@emotion/core'
 
 type Props = {
@@ -31,7 +31,23 @@ const Text = ({ as, children, style, className }: Props): JSX.Element => {
       break
   }
 
-  return <Root className={className} css={styles}>{children}</Root>
+  return (
+    <Root
+      className={className}
+      css={[
+        styles,
+        {
+          a: {
+            color: colors.accent,
+            textDecoration: 'none',
+            '&:hover': { color: colors.onSurface.primary }
+          }
+        }
+      ]}
+    >
+      {children}
+    </Root>
+  )
 }
 
 export default Text

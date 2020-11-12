@@ -7,10 +7,11 @@ const works: WorkType[] = [
     cover: getRemoteFileUrl('frames.png'),
     socialCover: getRemoteFileUrl('frames-social.png'),
     datePublished: '2020-10-14',
-    href: 'https://github.com/lumiqcreative/device-frames',
+    slug: 'device-frames',
     summary: 'Inch-perfect device frames ready for customisation.',
     title: 'Device Frames',
-    where: 'remote'
+    where: 'local',
+    pageKind: 'prebuilt'
   },
   {
     category: 'Deliverables',
