@@ -26,7 +26,7 @@ const Header = (): JSX.Element => (
           <Logo />
         </a>
       </Link>
-      <Button href='mailto:contact@lumiqcreative.com'>Get in Touch</Button>
+      <Button href='mailto:contact@patrykmichalik.com'>Get in Touch</Button>
     </Container>
   </div>
 )

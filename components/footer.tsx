@@ -18,7 +18,7 @@ const Footer = (): JSX.Element => (
         as='p'
         css={{ color: colors.onSurface.primary, margin: 'auto 0' }}
       >
-        &copy; 2018–{new Date().getFullYear()} Lumiq Creative
+        &copy; 2018–{new Date().getFullYear()} Patryk Michalik
       </Text>
     </div>
   </Container>

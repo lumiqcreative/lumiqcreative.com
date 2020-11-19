@@ -22,7 +22,7 @@ const DeviceFrames = ({ deviceFrames }: Props): JSX.Element => (
     heroDetail={
       <>
         Version 1.0 –{' '}
-        <a href='https://github.com/lumiqcreative/device-frames/blob/master/LICENSE'>
+        <a href='https://github.com/patrykmichalik/device-frames/blob/master/LICENSE'>
           View License
         </a>
       </>

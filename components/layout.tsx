@@ -32,10 +32,10 @@ const Layout = ({
 }: Props): JSX.Element => (
   <>
     <Head>
-      <title>{title ? `${title} – Lumiq Creative` : 'Lumiq Creative'}</title>
+      <title>{title ? `${title} – Patryk Michalik` : 'Patryk Michalik'}</title>
       <link
         rel='icon'
-        href='https://raw.githubusercontent.com/lumiqcreative/brand/master/q-mark/q-mark-black.png'
+        href='https://raw.githubusercontent.com/patrykmichalik/brand/master/logo-black.png'
       />
       <meta
         name='description'
@@ -46,7 +46,7 @@ const Layout = ({
       />
       <meta
         property='og:title'
-        content={title ? `${title} – Lumiq Creative` : 'Lumiq Creative'}
+        content={title ? `${title} – Patryk Michalik` : 'Patryk Michalik'}
       />
       <meta
         name='twitter:card'
