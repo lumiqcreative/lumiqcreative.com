@@ -1,5 +1,5 @@
 module.exports = {
   images: {
-    domains: ['content.lumiqcreative.com']
+    domains: ['content.patrykmichalik.com']
   }
 }

@@ -1,5 +1,5 @@
 const getRemoteFileUrl = (fileName: string): string => {
-  const remoteUrl = 'https://content.lumiqcreative.com'
+  const remoteUrl = 'https://content.patrykmichalik.com'
   const fileNameFormat = /[a-zA-Z0-9-]+\.(png|woff2)/
   if (!fileName.match(fileNameFormat)) {
     throw new Error(
