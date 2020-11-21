@@ -12,9 +12,9 @@ const Logo = (): JSX.Element => (
     xmlns='http://www.w3.org/2000/svg'
   >
     <path
-      fill-rule='evenodd'
+      fillRule='evenodd'
       d='M6 2h3a5 5 0 010 10H6V2zm3 12H6v6H0V2h2v16h2V0h5a7 7 0 110 14z'
-      clip-rule='evenodd'
+      clipRule='evenodd'
     />
   </svg>
 )

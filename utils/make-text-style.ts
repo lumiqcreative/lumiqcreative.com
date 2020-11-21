@@ -1,4 +1,4 @@
-import { css, SerializedStyles } from '@emotion/core'
+import { css, SerializedStyles } from '@emotion/react'
 
 const makeTextStyle = (fontFamily: 1 | 2, rules: SerializedStyles) =>
   css(

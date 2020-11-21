@@ -1,4 +1,4 @@
-import { css } from '@emotion/core'
+import { css } from '@emotion/react'
 import { forwardRef } from 'react'
 import { colors } from 'theme'
 

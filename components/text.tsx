@@ -1,9 +1,9 @@
 import { ReactNode } from 'react'
 import { colors, textStyles } from 'theme'
-import { SerializedStyles } from '@emotion/core'
+import { SerializedStyles } from '@emotion/react'
 
 type Props = {
-  as: 'p' | `h${ 1 | 2 | 3 | 4 | 5 | 6 }` | 'figcaption'
+  as: 'p' | `h${1 | 2 | 3 | 4 | 5 | 6}` | 'figcaption'
   children: ReactNode
   className?: string
   style: `title${1 | 2}` | 'subtitle' | `body${1 | 2}`

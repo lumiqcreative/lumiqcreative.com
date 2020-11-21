@@ -1,6 +1,6 @@
 import { AppProps } from 'next/app'
 import { colors } from 'theme'
-import { Global, css } from '@emotion/core'
+import { Global, css } from '@emotion/react'
 
 const App = ({ Component, pageProps }: AppProps): JSX.Element => (
   <>

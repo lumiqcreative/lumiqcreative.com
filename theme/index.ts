@@ -1,5 +1,5 @@
 import makeTextStyle from 'utils/make-text-style'
-import { css } from '@emotion/core'
+import { css } from '@emotion/react'
 
 const colors = {
   accent: 'hsla(256, 100%, 56%, 1)',
