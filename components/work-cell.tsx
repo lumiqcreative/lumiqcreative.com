@@ -33,7 +33,7 @@ const WorkCell = forwardRef<HTMLAnchorElement, Props>(
     >
       <Image
         alt={title}
-        css={{ background: colors.surface.secondary }}
+        css={{ background: colors.surface[1] }}
         height='1080'
         layout='responsive'
         src={cover}
@@ -41,21 +41,21 @@ const WorkCell = forwardRef<HTMLAnchorElement, Props>(
       />
       <Text
         as='h2'
-        css={{ color: colors.onSurface.primary, marginTop: 24 }}
+        css={{ color: colors.onSurface[0], marginTop: 24 }}
         style='title2'
       >
         {title}
       </Text>
       <Text
         as='p'
-        css={{ marginTop: 12, color: colors.onSurface.primary }}
+        css={{ marginTop: 12, color: colors.onSurface[0] }}
         style='body2'
       >
         {summary}
       </Text>
       <Text
         as='p'
-        css={{ marginTop: 12, color: colors.onSurface.secondary }}
+        css={{ marginTop: 12, color: colors.onSurface[1] }}
         style='body2'
       >
         {formatDate(datePublished)}

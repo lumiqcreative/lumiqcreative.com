@@ -47,14 +47,11 @@ type Params = {
   }
 }
 
-const getStaticProps = ({ params }: Params) => {
-  const work = getAutoGalleryWork(params.slug)
-  return {
-    props: {
-      work: work
-    }
+const getStaticProps = ({ params }: Params) => ({
+  props: {
+    work: getAutoGalleryWork(params.slug)
   }
-}
+})
 
 export { getStaticPaths, getStaticProps }
 export default Work

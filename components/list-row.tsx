@@ -37,7 +37,7 @@ const ListRow = ({ detail, subtitle, title }: Props) => (
         as='p'
         style='body2'
         css={{
-          color: colors.onSurface.secondary
+          color: colors.onSurface[1]
         }}
       >
         {subtitle}

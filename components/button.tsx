@@ -17,7 +17,7 @@ const Button = forwardRef<HTMLAnchorElement, Props>(
     <a
       className={className}
       css={[
-        textStyles.button.secondary,
+        textStyles.button[1],
         {
           alignItems: 'center',
           background: applyAlpha(colors.accent, 0.12),

@@ -1,13 +1,13 @@
 import { colors } from 'theme'
-import Button from './button'
 import Container from 'components/container'
 import Link from 'next/link'
 import Logo from 'components/logo'
+import IconButton from './icon-button'
 
 const Header = (): JSX.Element => (
   <div
     css={{
-      background: colors.surface.primary,
+      background: colors.surface[0],
       position: 'fixed',
       width: '100%',
       zIndex: 1
@@ -26,7 +26,18 @@ const Header = (): JSX.Element => (
           <Logo />
         </a>
       </Link>
-      <Button href='mailto:contact@patrykmichalik.com'>Get in Touch</Button>
+      <div css={{ display: 'grid', gridAutoFlow: 'column' }}>
+        <IconButton
+          iconName='twitter'
+          href='https://twitter.com/patrykmichalik_'
+          as='a'
+        />
+        <IconButton
+          iconName='github'
+          href='https://github.com/patrykmichalik'
+          as='a'
+        />
+      </div>
     </Container>
   </div>
 )

@@ -3,7 +3,7 @@ import { colors, media } from 'theme'
 const Logo = (): JSX.Element => (
   <svg
     css={{
-      fill: colors.onSurface.primary,
+      fill: colors.onSurface[0],
       height: 24,
       margin: 'auto 0',
       [media[0]]: { height: 28 }

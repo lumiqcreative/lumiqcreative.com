@@ -15,19 +15,19 @@ const Text = ({ as, children, style, className }: Props): JSX.Element => {
 
   switch (style) {
     case 'title1':
-      styles = textStyles.title.primary
+      styles = textStyles.title[0]
       break
     case 'title2':
-      styles = textStyles.title.secondary
+      styles = textStyles.title[1]
       break
     case 'subtitle':
       styles = textStyles.subtitle
       break
     case 'body1':
-      styles = textStyles.body.primary
+      styles = textStyles.body[0]
       break
     case 'body2':
-      styles = textStyles.body.secondary
+      styles = textStyles.body[1]
       break
   }
 
@@ -40,7 +40,7 @@ const Text = ({ as, children, style, className }: Props): JSX.Element => {
           a: {
             color: colors.accent,
             textDecoration: 'none',
-            '&:hover': { color: colors.onSurface.primary }
+            '&:hover': { color: colors.onSurface[0] }
           }
         }
       ]}

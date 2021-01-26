@@ -17,7 +17,7 @@ const WorkGrid = ({ filterText, works }: Props): JSX.Element => {
       if (work.where === 'local') {
         cells.push(
           <Link
-            href={`${work.category.toLowerCase()}/${work.slug}`}
+            href={`/${work.category.toLowerCase()}/${work.slug}`}
             key={work.title}
             passHref
           >

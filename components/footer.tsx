@@ -16,7 +16,7 @@ const Footer = (): JSX.Element => (
       <Text
         style='body2'
         as='p'
-        css={{ color: colors.onSurface.primary, margin: 'auto 0' }}
+        css={{ color: colors.onSurface[0], margin: 'auto 0' }}
       >
         &copy; 2018–{new Date().getFullYear()} Patryk Michalik
       </Text>

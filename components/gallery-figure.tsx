@@ -18,7 +18,7 @@ const GalleryFigure = ({ caption, image }: Props): JSX.Element => (
   >
     <Image
       alt={caption}
-      css={{ background: colors.surface.secondary }}
+      css={{ background: colors.surface[1] }}
       height={1080}
       layout='responsive'
       src={image}

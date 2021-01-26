@@ -20,7 +20,7 @@ const Hero = ({ detail, title, subtitle }: Props): JSX.Element => (
       <Text
         as='h1'
         css={{
-          color: colors.onSurface.primary,
+          color: colors.onSurface[0],
           hyphens: 'auto',
           maxWidth: 460,
           [media[0]]: { hyphens: 'none', maxWidth: 500 },
@@ -33,7 +33,7 @@ const Hero = ({ detail, title, subtitle }: Props): JSX.Element => (
       {subtitle && (
         <Text
           as='p'
-          css={{ color: colors.onSurface.primary, marginTop: 14 }}
+          css={{ color: colors.onSurface[0], marginTop: 14 }}
           style='body1'
         >
           {subtitle}
@@ -42,7 +42,7 @@ const Hero = ({ detail, title, subtitle }: Props): JSX.Element => (
       {detail && (
         <Text
           as='p'
-          css={{ color: colors.onSurface.secondary, marginTop: 14 }}
+          css={{ color: colors.onSurface[1], marginTop: 14 }}
           style='body2'
         >
           {detail}

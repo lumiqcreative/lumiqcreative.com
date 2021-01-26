@@ -22,7 +22,7 @@ const Tag = ({ active, children, data, onClick }: Props): JSX.Element => (
     <div
       css={[
         {
-          border: `1px solid ${colors.onSurface.primary}`,
+          border: `1px solid ${colors.onSurface[0]}`,
           borderRadius: 6,
           height: 10,
           transition: 'border-color 0.2s ease, border-width 0.2s ease',
@@ -37,9 +37,9 @@ const Tag = ({ active, children, data, onClick }: Props): JSX.Element => (
     />
     <span
       css={[
-        textStyles.button.primary,
+        textStyles.button[0],
         {
-          color: colors.onSurface.primary,
+          color: colors.onSurface[0],
           marginLeft: 8,
           transition: 'color 0.2s ease'
         },
