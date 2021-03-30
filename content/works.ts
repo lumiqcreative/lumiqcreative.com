@@ -1,11 +1,10 @@
 import { WorkType } from 'types'
-import getRemoteFileUrl from 'utils/get-remote-file-url'
 
 const works: WorkType[] = [
   {
     category: 'Resources',
-    cover: getRemoteFileUrl('frames.png'),
-    socialCover: getRemoteFileUrl('frames-social.png'),
+    cover: '/images/frames.png',
+    socialCover: 'images/frames-social.png',
     datePublished: '2020-10-14',
     slug: 'device-frames',
     summary: 'Inch-perfect device frames ready for customisation.',
@@ -15,20 +14,20 @@ const works: WorkType[] = [
   },
   {
     category: 'Deliverables',
-    cover: getRemoteFileUrl('overdrop-blocks.png'),
-    socialCover: getRemoteFileUrl('overdrop-blocks-social.png'),
+    cover: '/images/overdrop-blocks.png',
+    socialCover: 'images/overdrop-blocks-social.png',
     datePublished: '2020-08-22',
     figures: [
       {
-        image: getRemoteFileUrl('overdrop-places.png'),
+        image: '/images/overdrop-places.png',
         caption: 'Place manager.'
       },
       {
-        image: getRemoteFileUrl('overdrop-warnings.png'),
+        image: '/images/overdrop-warnings.png',
         caption: 'Weather warnings.'
       },
       {
-        image: getRemoteFileUrl('overdrop-radar.png'),
+        image: '/images/overdrop-radar.png',
         caption: 'Radar scale & controls.'
       }
     ],
@@ -41,8 +40,8 @@ const works: WorkType[] = [
   },
   {
     category: 'Deliverables',
-    cover: getRemoteFileUrl('lawnfeed-page.png'),
-    socialCover: getRemoteFileUrl('lawnfeed-page-social.png'),
+    cover: '/images/lawnfeed-page.png',
+    socialCover: '/images/lawnfeed-page-social.png',
     datePublished: '2020-07-30',
     href: 'https://lawnchair.app/lawnfeed',
     summary:
@@ -52,8 +51,8 @@ const works: WorkType[] = [
   },
   {
     category: 'Deliverables',
-    cover: getRemoteFileUrl('frames-docs.png'),
-    socialCover: getRemoteFileUrl('frames-docs-social.png'),
+    cover: '/images/frames-docs.png',
+    socialCover: '/images/frames-docs-social.png',
     datePublished: '2020-07-15',
     href: 'https://github.com/jahirfiquitiva/Frames/wiki',
     summary:

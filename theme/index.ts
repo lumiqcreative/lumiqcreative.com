@@ -18,11 +18,10 @@ const media = breakpoints.map(
 const textStyles = {
   title: [
     makeTextStyle(
-      1,
       css({
         fontSize: 36,
         fontWeight: 600,
-        letterSpacing: '-0.03em',
+        letterSpacing: '-0.04em',
         lineHeight: '42px',
         [media[0]]: {
           fontSize: 42,
@@ -35,17 +34,15 @@ const textStyles = {
       })
     ),
     makeTextStyle(
-      2,
       css({
         fontSize: 20,
-        letterSpacing: '-0.01em',
+        letterSpacing: '-0.02em',
         fontWeight: 600,
         lineHeight: '24px'
       })
     )
   ],
   subtitle: makeTextStyle(
-    2,
     css({
       fontWeight: 500,
       lineHeight: '24px',
@@ -55,7 +52,6 @@ const textStyles = {
   ),
   body: [
     makeTextStyle(
-      2,
       css({
         fontWeight: 400,
         lineHeight: '24px',
@@ -63,11 +59,10 @@ const textStyles = {
         letterSpacing: '-0.01em'
       })
     ),
-    makeTextStyle(2, css({ fontWeight: 400, lineHeight: '20px', fontSize: 15 }))
+    makeTextStyle(css({ fontWeight: 400, lineHeight: '20px', fontSize: 15 }))
   ],
   button: [
     makeTextStyle(
-      2,
       css({
         fontWeight: 500,
         lineHeight: '24px',
@@ -75,7 +70,7 @@ const textStyles = {
         letterSpacing: '-0.01em'
       })
     ),
-    makeTextStyle(2, css({ fontWeight: 500, lineHeight: '20px', fontSize: 15 }))
+    makeTextStyle(css({ fontWeight: 500, lineHeight: '20px', fontSize: 15 }))
   ]
 }
 

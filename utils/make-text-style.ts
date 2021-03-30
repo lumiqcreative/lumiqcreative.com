@@ -1,14 +1,11 @@
 import { css, SerializedStyles } from '@emotion/react'
 
-const makeTextStyle = (fontFamily: 1 | 2, rules: SerializedStyles) =>
+const makeTextStyle = (rules: SerializedStyles) =>
   css(
     {
       margin: 0,
       display: 'block',
-      fontFamily:
-        fontFamily === 1
-          ? '"Graphik", "Inter", sans-serif'
-          : '"Inter", sans-serif'
+      fontFamily: '"Work Sans", sans-serif'
     },
     rules
   )

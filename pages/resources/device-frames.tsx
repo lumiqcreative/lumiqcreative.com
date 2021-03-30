@@ -6,7 +6,6 @@ import IconButton from 'components/icon-button'
 import Layout from 'components/layout'
 import ListRow from 'components/list-row'
 import writeToClipboard from 'utils/write-to-clipboard'
-import getRemoteFileUrl from 'utils/get-remote-file-url'
 
 type Props = {
   deviceFrames: DeviceFrameType[]
@@ -18,7 +17,7 @@ const DeviceFrames = ({ deviceFrames }: Props): JSX.Element => (
     heroTitle='Device Frames'
     heroSubtitle='Inch-perfect device frames ready for customisation.'
     description='Inch-perfect device frames ready for customisation.'
-    cover={getRemoteFileUrl('frames-social.png')}
+    cover={'/images/frames-social.png'}
     heroDetail={
       <>
         Version 1.0 –{' '}

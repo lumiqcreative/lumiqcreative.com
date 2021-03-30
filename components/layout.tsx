@@ -61,10 +61,10 @@ const Layout = ({
       />
       <meta
         property='og:image'
-        content={cover || 'https://content.lumiqcreative.com/img/cover.png'}
+        content={cover || '/images/cover.png'}
       />
       <link
-        href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap'
+        href='https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap'
         rel='stylesheet'
       />
     </Head>
