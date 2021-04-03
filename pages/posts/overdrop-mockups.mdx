@@ -1,0 +1,40 @@
+import Post from '../../components/post'
+import PostImage from '../../components/post-image'
+import MarkdownContainer from '../../components/markdown-container'
+
+export const meta = {
+  title: 'Overdrop Mockups',
+  subtitle:
+    'UX writing and co-design for the cross-platform mobile weather app.',
+  date: '2020-08-22',
+  image: '/overdrop-mockups.png'
+}
+
+export default ({ children }) => <Post meta={meta}>{children}</Post>
+
+<MarkdownContainer narrow>
+
+I’m helping to design Overdrop – a weather app [for
+Android](https://play.google.com/store/apps/details?id=widget.dd.com.overdrop.free&hl=en&gl=US)
+and [iOS](https://apps.apple.com/us/app/overdrop-weather/id1459855011). An elegant, unobtrusive
+UI style is crucial for an information-heavy app.
+
+<PostImage src='/overdrop-warnings.png' alt='Warnings screen.' />
+
+On the Warnings screen, a dynamic icon comprising three exclamation points indicates
+the severity of upcoming weather phenomena. Each warning is displayed as a
+card, with a link to the source available.
+
+<PostImage src='/overdrop-places.png' alt='Places screen.' />
+
+The Places screen allows people to save their favourite locations and easily switch between them.
+Overdrop can also detect the user’s location automatically and update it as they move.
+
+<PostImage src='/overdrop-radar.png' alt='Weather radar.' />
+
+The weather radar shows a panel with a scale and controls near the bottom of the screen.
+The scale – ranging from blue to yellow – helps identify precipitation intensity, and a
+slider lets people see imagery for the past and future. Because it uses a large range
+of values, buttons are also provided to move three hours (the smallest increment) either way.
+
+</MarkdownContainer>

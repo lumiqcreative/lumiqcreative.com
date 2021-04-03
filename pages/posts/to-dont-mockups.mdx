@@ -1,0 +1,29 @@
+import Post from '../../components/post'
+import PostImage from '../../components/post-image'
+import MarkdownContainer from '../../components/markdown-container'
+
+export const meta = {
+  title: 'To Don’t Mockups',
+  subtitle: 'UI design for the reverse to-do list.',
+  date: '2021-04-03',
+  image: '/to-dont-mockups.png'
+}
+
+export default ({ children }) => <Post meta={meta}>{children}</Post>
+
+<MarkdownContainer narrow>
+
+I’ve designed the UI for To Don’t – an Android app aimed at helping people get rid of bad
+habits. It’s centered around a filterable list of vices which refreshes every day. Visually
+monotonous content called for a touch of visual flare, so a bold yellow header gives the app
+a distinguishable look while also serving as a toolbar. It includes a list filter for effortless use.
+
+<PostImage src='/to-dont-log.png' alt='Log screen.' />
+
+The Log screen collects success stats for four time frames. It also allows changing the
+status of habits for past days. Finally, a hint bubble is displayed to new users
+on the home screen to help them get started.
+
+<PostImage src='/to-dont-hint.png' alt='Hint bubble for new users.' />
+
+</MarkdownContainer>

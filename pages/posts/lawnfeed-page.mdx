@@ -1,0 +1,21 @@
+import Post from '../../components/post'
+import MarkdownContainer from '../../components/markdown-container'
+
+export const meta = {
+  title: 'Lawnfeed Page',
+  subtitle:
+    'Download page for the add-in that integrates Google Feed into Lawnchair.',
+  date: '2020-07-30',
+  image: '/lawnfeed-page.png'
+}
+
+export default ({ children }) => <Post meta={meta}>{children}</Post>
+
+<MarkdownContainer narrow>
+
+I’ve designed and developed the download page for Lawnfeed –
+the add-in that integrates Google Feed into Lawnchair. The
+page dynamically fetches the latest Lawnfeed version so no
+manual updates are needed. [Visit it here](https://lawnchair.app/lawnfeed).
+
+</MarkdownContainer>

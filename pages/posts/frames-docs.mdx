@@ -1,0 +1,21 @@
+import Post from '../../components/post'
+import MarkdownContainer from '../../components/markdown-container'
+
+export const meta = {
+  title: 'Frames Docs',
+  subtitle:
+    'Setup and maintenance documentation for the Android wallpaper app library.',
+  date: '2020-07-15',
+  image: '/frames-docs.png'
+}
+
+export default ({ children }) => <Post meta={meta}>{children}</Post>
+
+<MarkdownContainer narrow>
+
+I’ve prepared the documentation for [Frames](https://github.com/jahirfiquitiva/Frames)
+– a library for building Android wallpaper apps. It’s a practical step-by-step guide
+suited for beginner and experienced developers alike. With handy notes, reference sheets
+for properties, and more. [Read it on GitHub](https://github.com/jahirfiquitiva/Frames/wiki).
+
+</MarkdownContainer>
