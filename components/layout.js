@@ -37,6 +37,11 @@ const Layout = ({ children, title, description, image }) => (
         content={image ? 'summary_large_image' : 'summary'}
       />
       <meta property='og:image' content={image || '/cover.png'} />
+      <link rel='preconnect' href='https://fonts.gstatic.com' />
+      <link
+        href='https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap'
+        rel='stylesheet'
+      />
     </Head>
     <Header />
     {children}
