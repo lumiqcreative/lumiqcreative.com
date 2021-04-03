@@ -39,7 +39,7 @@ const Layout = ({ children, title, description, image }) => (
       <meta property='og:image' content={image || '/cover.png'} />
       <link rel='preconnect' href='https://fonts.gstatic.com' />
       <link
-        href='https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap'
+        href='https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890-%E2%80%93%E2%80%98%E2%80%99%E2%80%9C%E2%80%9D%C2%A9'
         rel='stylesheet'
       />
     </Head>
