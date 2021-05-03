@@ -34,10 +34,6 @@ const Footer = () => (
         }}
       >
         <SocialButton
-          href='https://instagram.com/patrykmichalik_'
-          icon='instagram'
-        />
-        <SocialButton
           href='https://twitter.com/patrykmichalik_'
           icon='twitter'
         />
