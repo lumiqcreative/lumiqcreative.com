@@ -8,9 +8,9 @@ const Home = ({ posts }) => (
   <Layout>
     <Hero />
     <PostGrid>
-      {posts.map(post => {
-        return <PostCard key={post.slug} post={post} />
-      })}
+      {posts.map(post => (
+        <PostCard key={post.slug} post={post} />
+      ))}
     </PostGrid>
   </Layout>
 )
