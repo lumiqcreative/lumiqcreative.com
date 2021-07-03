@@ -1,0 +1,23 @@
+import Post from '../../components/post'
+import MarkdownContainer from '../../components/markdown-container'
+import PostImage from '../../components/post-image'
+
+export default ({ children }) => <Post meta={meta}>{children}</Post>
+
+export const meta = {
+  title: 'Overdrop Icons',
+  subtitle:
+    'Custom in-app iconography for the cross-platform mobile weather app.',
+  date: '2021-05-03',
+  image: '/overdrop-icons.png'
+}
+
+<MarkdownContainer>
+  <PostImage src='/overdrop-icons.png' cover />
+</MarkdownContainer>
+
+<MarkdownContainer narrow>
+
+I’ve had the pleasure to design an all-new icon set for Overdrop, coming soon to the app. With outlined forms and slim strokes, it aims to offer optimal readability and an elegant look.
+
+</MarkdownContainer>

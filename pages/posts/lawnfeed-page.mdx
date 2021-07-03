@@ -1,5 +1,6 @@
 import Post from '../../components/post'
 import MarkdownContainer from '../../components/markdown-container'
+import PostImage from '../../components/post-image'
 
 export const meta = {
   title: 'Lawnfeed Page',
@@ -11,11 +12,13 @@ export const meta = {
 
 export default ({ children }) => <Post meta={meta}>{children}</Post>
 
+<MarkdownContainer>
+  <PostImage src='/lawnfeed-page.png' cover />
+</MarkdownContainer>
+
 <MarkdownContainer narrow>
 
 I’ve designed and developed the download page for Lawnfeed –
-the add-in that integrates Google Feed into Lawnchair. The
-page dynamically fetches the latest Lawnfeed version so no
-manual updates are needed. [Visit it here](https://lawnchair.app/lawnfeed).
+the add-in that integrates Google Feed into Lawnchair. [Visit it here](https://lawnchair.app/lawnfeed).
 
 </MarkdownContainer>

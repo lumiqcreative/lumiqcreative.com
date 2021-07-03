@@ -20,12 +20,6 @@ const Hero = () => (
         to&shy;ge&shy;ther words.
       </Text>
       <Spacer height={24} />
-      <Text textStyle={typography.body1} css={{ maxWidth: 440 }}>
-        Or, to put it simply, I make software. My name is Patryk Michalik, and I
-        currently lead development at{' '}
-        <a href='https://github.com/LawnchairLauncher'>Lawnchair</a>.
-      </Text>
-      <Spacer height={24} />
       <Button href='mailto:contact@patrykmichalik.com'>Get in Touch</Button>
     </Container>
   </div>

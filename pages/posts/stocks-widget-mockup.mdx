@@ -1,0 +1,23 @@
+import Post from '../../components/post'
+import MarkdownContainer from '../../components/markdown-container'
+import PostImage from '../../components/post-image'
+
+export const meta = {
+  title: 'Stocks Widget Mockup',
+  subtitle:
+    'A concept of a minimal, wallpaper-themed stocks widget for Android 12.',
+  date: '2021-05-29',
+  image: '/stocks-widget-mockup.png'
+}
+
+export default ({ children }) => <Post meta={meta}>{children}</Post>
+
+<MarkdownContainer>
+  <PostImage src='/stocks-widget-mockup.png' cover />
+</MarkdownContainer>
+
+<MarkdownContainer narrow>
+
+With Android 12 revamping widgets, I’ve designed a concept of a minimalistic, wallpaper-themed stocks widget for the new version of the OS. It presents the performance of a symbol throughout the day.
+
+</MarkdownContainer>

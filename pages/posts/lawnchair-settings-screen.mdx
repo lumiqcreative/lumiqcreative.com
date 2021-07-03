@@ -1,0 +1,23 @@
+import Post from '../../components/post'
+import MarkdownContainer from '../../components/markdown-container'
+import PostImage from '../../components/post-image'
+
+export const meta = {
+  title: 'Lawnchair Settings Screen',
+  subtitle:
+    'All-new Settings screen design for the open-source Android home app.',
+  date: '2021-05-11',
+  image: '/lawnchair-settings-screen.png'
+}
+
+export default ({ children }) => <Post meta={meta}>{children}</Post>
+
+<MarkdownContainer>
+  <PostImage src='/lawnchair-settings-screen.png' cover />
+</MarkdownContainer>
+
+<MarkdownContainer narrow>
+
+For [Lawnchair](https://github.com/LawnchairLauncher/lawnchair) 11, I’ve designed an all-new Settings screen that groups related entries more clearly. Here it is with a few upcoming tweaks.
+
+</MarkdownContainer>

@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import { colors } from '../utils/theme'
+import Spacer from './spacer'
 
-const PostImage = ({ src, alt }) => (
+const PostImage = ({ src, alt, cover }) => (
   <>
     <div css={{ '&:not(:first-child)': { height: 24 } }} />
     <Image
@@ -12,6 +13,7 @@ const PostImage = ({ src, alt }) => (
       layout='responsive'
       css={{ background: colors.surface[1] }}
     />
+    {cover && <Spacer height={64} />}
   </>
 )
 

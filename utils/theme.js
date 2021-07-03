@@ -19,6 +19,20 @@ const typography = {
       lineHeight: '64px'
     }
   },
+  h2: {
+    fontSize: 28,
+    fontWeight: 600,
+    letterSpacing: '-0.03em',
+    lineHeight: '32px',
+    [media[0]]: {
+      fontSize: 32,
+      lineHeight: '38px'
+    },
+    [media[1]]: {
+      fontSize: 36,
+      lineHeight: '42px'
+    }
+  },
   body1: {
     fontSize: 16,
     fontWeight: 400,

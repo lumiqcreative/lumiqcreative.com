@@ -1,5 +1,6 @@
 import Post from '../../components/post'
 import MarkdownContainer from '../../components/markdown-container'
+import PostImage from '../../components/post-image'
 
 export const meta = {
   title: 'Frames Docs',
@@ -11,11 +12,17 @@ export const meta = {
 
 export default ({ children }) => <Post meta={meta}>{children}</Post>
 
+<MarkdownContainer>
+  <PostImage src='/frames-docs.png' cover />
+</MarkdownContainer>
+
 <MarkdownContainer narrow>
 
-I’ve prepared the documentation for [Frames](https://github.com/jahirfiquitiva/Frames)
-– a library for building Android wallpaper apps. It’s a practical step-by-step guide
-suited for beginner and experienced developers alike. With handy notes, reference sheets
-for properties, and more. [Read it on GitHub](https://github.com/jahirfiquitiva/Frames/wiki).
+I’ve prepared the documentation for
+[Frames](https://github.com/jahirfiquitiva/Frames) – a library for building
+Android wallpaper apps. It’s a practical step-by-step guide suited for
+beginner and experienced developers alike, with handy notes, reference sheets
+for properties, and more. [Read it on
+GitHub](https://github.com/jahirfiquitiva/Frames/wiki).
 
 </MarkdownContainer>

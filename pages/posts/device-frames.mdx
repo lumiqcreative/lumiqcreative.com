@@ -1,5 +1,6 @@
 import Post from '../../components/post'
 import MarkdownContainer from '../../components/markdown-container'
+import PostImage from '../../components/post-image'
 
 export default ({ children }) => <Post meta={meta}>{children}</Post>
 
@@ -10,6 +11,10 @@ export const meta = {
   date: '2020-10-14',
   image: '/device-frames.png'
 }
+
+<MarkdownContainer>
+  <PostImage src='/device-frames.png' cover />
+</MarkdownContainer>
 
 <MarkdownContainer narrow>
 
