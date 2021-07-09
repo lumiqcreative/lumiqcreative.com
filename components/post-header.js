@@ -10,13 +10,22 @@ const PostHeader = ({ title, subtitle, image, date }) => (
     <Container
       css={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}
     >
-      <Text textStyle={typography.h2} renderAs='h2'>
+      <Text
+        textStyle={typography.h2}
+        renderAs='h2'
+        css={{ textAlign: 'center' }}
+      >
         {title}
       </Text>
       <Spacer height={12} />
-      <Text textStyle={typography.body1}>{subtitle}</Text>
+      <Text textStyle={typography.body1} css={{ textAlign: 'center' }}>
+        {subtitle}
+      </Text>
       <Spacer height={12} />
-      <Text textStyle={typography.body1} css={{ color: colors.onSurface[1] }}>
+      <Text
+        textStyle={typography.body1}
+        css={{ color: colors.onSurface[1], textAlign: 'center' }}
+      >
         Published on {formatDate(date)}
       </Text>
     </Container>
