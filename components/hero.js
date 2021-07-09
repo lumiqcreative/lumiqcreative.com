@@ -16,7 +16,7 @@ const Hero = () => (
         }}
         renderAs='h1'
       >
-        I ar&shy;range shapes, com&shy;mand com&shy;pu&shy;ters, and put
+        I ar&shy;range shapes, command com&shy;pu&shy;ters, and put
         to&shy;ge&shy;ther words.
       </Text>
       <Spacer height={24} />
