@@ -1,0 +1,23 @@
+import Post from '../../components/post'
+import MarkdownContainer from '../../components/markdown-container'
+import PostVideo from '../../components/post-video'
+
+export const meta = {
+  title: 'Lawnchair Colour Picker',
+  subtitle:
+    'Modal, preset-based colour picker for the open-source Android home app.',
+  date: '2021-07-02',
+  image: '/lawnchair-colour-picker.png'
+}
+
+export default ({ children }) => <Post meta={meta}>{children}</Post>
+
+<MarkdownContainer>
+  <PostVideo src='/lawnchair-colour-picker.mp4' cover />
+</MarkdownContainer>
+
+<MarkdownContainer narrow>
+
+Accent colour customisation is coming to [Lawnchair](https://github.com/lawnchairlauncher/lawnchair) 11 with version 11 Alpha 6! Along with the option to use the system accent colour, Lawnchair will offer a dozen extra colours to choose from.
+
+</MarkdownContainer>
